@@ -250,7 +250,7 @@ Coat of arms comes from this era also.\\
 + soci
 + education in europ
 
-*** Timeline
+** Timeline
 #+Caption: self portrait with mirror.
 [[]]
 Organized this way because we look back, and organize history.//
@@ -273,7 +273,7 @@ byzantine empire expands\\
 Western europe has deurbanization problems, city govs abandoned.
 ... Russains start to get organized
 
-*** Medieval Times
+** Medieval Times
 + social order\\
 + towns/urban spaces like\\
 + religious life and science?\\ 
@@ -281,17 +281,17 @@ Western europe has deurbanization problems, city govs abandoned.
 
 During this time in europe when bad things: wars, plauges - Golden age of islam...
 due to trends, sometimes they get it wrong.\\
-**** Zombie Apoc.
+*** Zombie Apoc.
 What would happen if we had to abandon the city, where would we go? \\
 Go to manors and agree to work in exchange for essentially =food=
 
-**** Fuedelism
+*** Fuedelism
 We don't really know where fuedelism started. Most think england, maybe w. france.
 + *Nobles* - highest is king - Obligated to defend other two groups _can become /knight groups/_ \\
 + *Priests* - Praying for everyone all the time. ?Pray for people who might be in purgatory?
 + *Serfs* - People doing the work.
 
-*** Scholarly life
+** Scholarly life
 1050 and teh return of "classical learning"\\
 The importance of Aristotle v. Plato in Medieval Europe\\
 + Aristotle most important, however, plato was taught...?\\
@@ -309,43 +309,43 @@ The importance of Aristotle v. Plato in Medieval Europe\\
       dismutation, debate around an issue - the nature of something.
     + More of a method than anything.
 
-**** Roger bacon
+*** Roger bacon
 Medieval professor - forms basis of scientific method. Makes artificial rainbow and freaks out students.
 
-**** William of Ockham - Ockham's razor.
+*** William of Ockham - Ockham's razor.
 
-**** Albert Magnus /Albert the great/
+*** Albert Magnus /Albert the great/
 Falcolnry regarded as scholr priest and professor
 
-**** Hildegard of Bingen Nun
+*** Hildegard of Bingen Nun
 Outlier example of intelelual thought done by women\\
 + Creates a lot of music /like a rennasince women/ 
 + Has a medical garden
 + publishes medical material 
 
-**** Cristine depuzon?
+*** Cristine depuzon?
 all women city state
 
 
-**** Thomas Aquinas
+*** Thomas Aquinas
 + Explains how differnt substances come to gogether to form new material.
 + Aquinas Cosmos
   + Dantes inferno arises from this.
-*** Medieval engineering
+** Medieval engineering
 + Heavy plows 
 + Trebuchets
 + crossbow
 + could think of castles
 + Artifical power - wind mills
 
-*** Music
+** Music
 hurdi gurdi???
 
-*** Medieval medicine
+** Medieval medicine
 + Black Death
   + Some people think this was an oldschool ebola 
     Sutonic virus 
-**** Old theory
+*** Old theory
 Rats on ships is how the diseases spread.
 + Physicians and teh plague
 
