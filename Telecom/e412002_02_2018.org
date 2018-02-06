@@ -1,0 +1,15 @@
+* Let /phi_i(t) be orthogonal and normalized functions.
+
+  
+  <$/phi_i(t),\phi_j(t)$> = 0, $i\neq j$ <- orthogonal
+
+
+
+<$/phi_i(t),\phi_j(t)$> = 1 <- normalized (input energy)
+
+$g(t) = \sum{i=1}{n}{g_i*\phi_i(t)}$ if N-> \inf this can represent any signal 
+g(t).
+
+$E_g&& = \integral{-\inf}{\inf} \mag{g(t)}^2}{dt}
+&& =`
+

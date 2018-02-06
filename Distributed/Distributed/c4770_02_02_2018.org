@@ -1,0 +1,16 @@
+* Assignment 1 
+** Introduction
+   For the first phase of this project, 
+   + your will write a simple multi-threaded web server. 
+    :A web server is a program that allows clients (typically web browsers) to make network connections and download documents. A web browser will send requests for a document to your web server. When the web server receives a request, it fulfills the request by sending back the appropriate document on the same connection. Subsequent phases of this project will add functionality for servicing web application requests, but for now, your web server will simply a reply with the requested document that is stored on the server’s disk.
+
+When executed, the web server should open the port passed as a command line argument to accept incoming TCP connections. When a new connection is accepted, your web server should create a new detached thread to handle the client connection.
+
+
+** Parsing code 
+   use regex.
+*** Three types of Disctributed systems
+    HPDC
+    ditributed data
+
+    came about for need 
