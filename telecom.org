@@ -1,0 +1,81 @@
+#+TITLE: Ditigal Transmitters and Recievers
+
+Use correlators to match input to possible transmitted waveforms
+* Transmitter
+#+CAPTION: internals of Ditigal reciever with two-bit decode
+#+attr_html: :width 300px
+[[./img/Digital_reciever.png]]
+
+* Reciever
+
+
+two bits per symbol - four possible wave forms
+| symbol | bits | four possible waveforms |
+|      0 |   00 |                     0^0 |
+|      1 |   01 |                    90^0 |
+|      2 |   10 |                   180^0 |
+|      3 |   11 |                   270^0 |
+
+* TODO Graham-Schmidt: check matrix algebra book on this topic.
+:DEADLINE: <2018-02-05 Mon>
+
++ Signals S_1(t),...,S_m(t)
++ basis functions \phi_n(t),...,\phi_n(t), N \neq M
++ \(S_i(t) = \sum{n=1}{N}{S_{in} \phi_n(t)}\)
++ *S_i* = [S_{i1} S_{i2} ... S_{in}]
+
+** 1st signal
+
+E_{s1} = $||S_{1}||^2$
+
+$\phi_1 = $\frac{S_1(t)}{\sqrt{E_{s1}}}$
+
+$S_{11} = \sqrt{E_{s1}}$
+
+** 2nd -- Nth signal
+/Creating a new basis function/
+
+S_{21} = <S_2(t),\phi_1(t)>
+
+
+
+r_2(t) = S_2(t) - S_{21} \phi_1(t) <-- orthogonal to \phi_1(t)
+
+=If remainted r_i(t) = 0 skip the steps below=
+
++ The part of signal 2 that can't be represented by \phi_1(t).
+	
+	E_{r2} = ||r_2(t)||^2
+	
+	\phi_2(t) = $\frac{r_2(t)}{\sqrt{E_{r2}}}$
+
+	S_{22} = $\sqrt{E_{r2}}$
++ others
+
+	S_{ni} = <S_n(t) , \phi_i(t)> for \phi_i(t) which are defined.
+
+	r_i(t) = S_i(t) - \sum{S_{in}} \phi_n(t)
+
+* Fourier Transfrom
+
++  *F* {g(t)} = G(f) = $\int_{-\inf}^{\inf} g(t) e^{-j2\pi ft}$
+
++  *F* $^{-1}$ {G(f)} = g(t) = $\int_{-\inf}^{\inf} G(f) e^{j2\pi ft}$
+
+
+** TODO Properties: verify that [[EQ1]] is correct
++ Linearity
+  + *F* ${a_1 x_1(t) + a_2 x_2(t)}$ = a_1 *F* ${x_1(t)}$ + a_2 *F* ${x_2(t)}$
++ Time Shift
+  + *F* ${x(t - T_0)}$ = $\int_{-\inf}^{\inf} x(t-t_0) e^{-j2\pi ft}$
+    
+	\lambda = t-t_0
+
+    = $e^{-j2\pi f}\int_{-\inf}^{\inf}{x(\lambda +t_0)}$
+
+    = e^{-j2\pift_0} $\int_{-\inf}^{inf} x(\lambda) e^{-2\pi f\lambda} d\lambda$ <<EQ1>> (EQ1)
+
+    = e^{-2j\pift_0} X(f)
+
++ Frequency Property
+  + *F* $^{-1}{X(f-f_0)} = e^{j2\pi f_0t} \int_{-\inf}^{\inf}{x(t)}$
