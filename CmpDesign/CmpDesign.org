@@ -1,0 +1,29 @@
+* TODO Get lecture number for this..
+** Latch 
++ Level sensetive
+*** Dlatch
+
+#+Caption: Signals of a Dlatch.
+#+attr_html: :width 300px
+[[./img/DFFandDLATCHsignals.png]]
+** Flip flop
+
+*** DFF D-Flip flop 
+
++ Edge triggered
+#+Caption: Signals of a DFF.
+#+attr_html: :width 300px
+[[./img/DFFandDLATCHsignals.png]]
+
+*** VHDL code for DFF.
++ If all inputs are not in the sensitivity list, then the circuit is not combinational.
+
+** DFF with muliplexer
+*** TODO grab simulation data from elearn for notes.
+
+** Writing a test bench
++ How is it done?\\
+You must test the functionality of the circuit.
+
+
+** Use componenets and generates.
