@@ -3,7 +3,7 @@
   :CUSTOM_ID: history-1310---science-and-technology-in-world-civilization
   :END:
 
-  Date: <2019-01-18 Thu> Lecturer: Driggers
+  Date: <2018-01-18 Thu> Lecturer: Driggers
 
 ** Questions? :email: edriggers@tntech.edu *Office Hours*: 
 T-Th: 4:30-6
@@ -237,8 +237,13 @@ From A Tale of the Shipwrecked Sailor (Maybe from 2500 BC)
 
 + Know that person was fairly intelligent. 
  
+* TODO Lecture 4 = 
+:DATE: <2018-01-25 Thu>
 
-* TODO Lecture ? - Europe in the Middle Ages; Natural Philosophy: Remind driggers about quadrium
+* TODO Lecture 5
+:DATE: <2018-02-01 Thu>
+
+* TODO Lecture 6 - Europe in the Middle Ages; Natural Philosophy: Remind driggers about quadrium
 :Date: <2018-02-06 Tue>
 
 ** middle ages
@@ -378,7 +383,7 @@ Rats on ships is how the diseases spread.
 + serfs were able to negotiate for higher pay since soo many people died, there weren't many people around to work.\\
 +Chronicles of the plague
 
-* TODO Lecture ? - test bank, Golden age of Islamic philosophy: email driggers about magic early Tuesday morning.
+* TODO Lecture  - test bank, Golden age of Islamic philosophy: email driggers about magic early Tuesday morning.
 :DATE: <2018-02-08 Thu>
 
 ** What to expect on test.
