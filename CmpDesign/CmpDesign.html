@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>CmpDesign</title>
-<!-- 2018-02-06 Tue 13:20 -->
+<!-- 2018-02-08 Thu 13:20 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Tommy Lane" />
@@ -164,6 +164,18 @@ for the JavaScript code in this tag.
 <li><a href="#sec-1-5">1.5. Use componenets and generates.</a></li>
 </ul>
 </li>
+<li><a href="#sec-2">2. Chapter 8 Wakerly</a>
+<ul>
+<li><a href="#sec-2-1">2.1. Serial Adder</a></li>
+<li><a href="#sec-2-2">2.2. Synchronous System</a>
+<ul>
+<li><a href="#sec-2-2-1">2.2.1. Tasks</a></li>
+<li><a href="#sec-2-2-2">2.2.2. So, how fast can I run my adder???</a></li>
+<li><a href="#sec-2-2-3">2.2.3. clock skew</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -246,10 +258,168 @@ You must test the functionality of the circuit.
 <h3 id="sec-1-5"><span class="section-number-3">1.5</span> Use componenets and generates.</h3>
 </div>
 </div>
+
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Chapter 8 Wakerly</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Serial Adder</h3>
+<div class="outline-text-3" id="text-2-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 1:</span> Serial Binary adder.</caption>
+
+<colgroup>
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left">&#xa0;</td>
+<td class="right">t<sub>3</sub></td>
+<td class="right">t<sub>2</sub></td>
+<td class="right">t<sub>1</sub></td>
+<td class="right">t<sub>0</sub></td>
+</tr>
+
+<tr>
+<td class="left">A</td>
+<td class="right">0</td>
+<td class="right">1</td>
+<td class="right">1</td>
+<td class="right">0</td>
+</tr>
+
+<tr>
+<td class="left">B</td>
+<td class="right">0</td>
+<td class="right">1</td>
+<td class="right">1</td>
+<td class="right">1</td>
+</tr>
+
+<tr>
+<td class="left">C<sub>in0</sub></td>
+<td class="right">?</td>
+<td class="right">?</td>
+<td class="right">?</td>
+<td class="right">0</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="right">&#xa0;</td>
+<td class="right">&#xa0;</td>
+<td class="right">&#xa0;</td>
+<td class="right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="left">S</td>
+<td class="right">1</td>
+<td class="right">1</td>
+<td class="right">0</td>
+<td class="right">1</td>
+</tr>
+
+<tr>
+<td class="left">C<sub>out</sub></td>
+<td class="right">0</td>
+<td class="right">1</td>
+<td class="right">1</td>
+<td class="right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="right">&#xa0;</td>
+<td class="right">&#xa0;</td>
+<td class="right">&#xa0;</td>
+<td class="right">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Synchronous System</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>FF are clocked by the same common clock signal
+</li>
+<li>Races and hazards are not a problem in synchronous systems -&gt;WHY?
+<ul class="org-ul">
+<li>Races: More than 1 signal switching concurrently
+</li>
+<li>Hazards: Unwanted switching transients that may appear at the output of a circuit because differnt path exhibits different propagationn delays.
+</li>
+</ul>
+</li>
+<li><b>Not</b> a problem because the clock takes care of the slower of the race condition.
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-2-2-1" class="outline-4">
+<h4 id="sec-2-2-1"><span class="section-number-4">2.2.1</span> Tasks</h4>
+<div class="outline-text-4" id="text-2-2-1">
+<ul class="org-ul">
+<li>Minimize and determinte the amount of clock skew in the system
+</li>
+<li>Ensure that FF have positive setup and hold time margins <code>Shown in next slide</code>
+</li>
+<li>Identify asynchro&#x2026;&#x2026;
+</li>
+</ul>
+
+<p>
+t<sub>ffpd</sub> = ff prop delay<br  />
+t<sub>comb</sub> = combinational logic delay<br  />
+t<sub>setup</sub> = time duration prior to the clock edge at which the incoming data to the flip flop should be stable.<br  />
+t<sub>hold</sub> Time duration after the clock edge for data to remain stable.<br  />
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2-2-2" class="outline-4">
+<h4 id="sec-2-2-2"><span class="section-number-4">2.2.2</span> So, how fast can I run my adder???</h4>
+<div class="outline-text-4" id="text-2-2-2">
+<p>
+I want my clock period &gt; (t<sub>ffpd</sub> + t<sub>comb</sub> + t<sub>setup</sub>)<br  />
+Also, want to make sure that T<sub>hold</sub> &gt; t<sub>ffpd</sub> + t<sub>comb</sub>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2-2-3" class="outline-4">
+<h4 id="sec-2-2-3"><span class="section-number-4">2.2.3</span> clock skew</h4>
+<div class="outline-text-4" id="text-2-2-3">
+<p>
+clock<sub>skew</sub> = Difference in arrival times of the clock signal to different devices.
+</p>
+</div>
+
+<ol class="org-ol"><li><a id="sec-2-2-3-1" name="sec-2-2-3-1"></a>Solution for clock skew<br  /><div class="outline-text-5" id="text-2-2-3-1">
+<p>
+H-tree clock layout.
+</p>
+</div>
+</li></ol>
+</div>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Tommy Lane</p>
-<p class="date">Created: 2018-02-06 Tue 13:20</p>
+<p class="date">Created: 2018-02-08 Thu 13:20</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>

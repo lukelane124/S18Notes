@@ -27,3 +27,49 @@ You must test the functionality of the circuit.
 
 
 ** Use componenets and generates.
+
+
+* Chapter 8 Wakerly
+** Serial Adder
+
+#+Caption: Serial Binary adder.
+|       | t_3 | t_2 | t_1 | t_0 |
+| A     |   0 |   1 |   1 |   0 |
+| B     |   0 |   1 |   1 |   1 |
+| C_in0 |   ? |   ? |   ? |   0 |
+|       |     |     |     |     |
+| S     |   1 |   1 |   0 |   1 |
+| C_out |   0 |   1 |   1 |     |
+|       |     |     |     |     | 
+
+  
+** Synchronous System
++ FF are clocked by the same common clock signal
++ Races and hazards are not a problem in synchronous systems ->WHY?
+  + Races: More than 1 signal switching concurrently
+  + Hazards: Unwanted switching transients that may appear at the output of a circuit because differnt path exhibits different propagationn delays.
++ *Not* a problem because the clock takes care of the slower of the race condition.
+
+*** Tasks
++ Minimize and determinte the amount of clock skew in the system
++ Ensure that FF have positive setup and hold time margins =Shown in next slide=
++ Identify asynchro......
+
+#+Caption: Detailed timing diagram showing prop delays and setup and hold times w/ respect to clock.
+
+
+t_ffpd = ff prop delay\\
+t_comb = combinational logic delay\\
+t_setup = time duration prior to the clock edge at which the incoming data to the flip flop should be stable.\\
+t_hold Time duration after the clock edge for data to remain stable.\\
+
+*** So, how fast can I run my adder???
+I want my clock period > (t_ffpd + t_comb + t_setup)\\
+Also, want to make sure that T_hold > t_ffpd + t_comb
+*** clock skew
+#+Caption: Clock skew example.
+clock_skew = Difference in arrival times of the clock signal to different devices.
+
+**** Solution for clock skew
+H-tree clock layout.
+
