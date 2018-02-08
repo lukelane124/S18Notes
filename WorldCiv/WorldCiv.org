@@ -215,7 +215,7 @@ Mostly derived from needs of scribes, and clerks, doing tax calculations, record
 Scholars of early medicine started taking /notes/ about what methods worked, and those that didn't
 
 
-* Lecture 3 = Ancient Egypt
+* TODO Lecture 3 = Ancient Egypt: Finish updating this info.
 :DATE: <2018-01-25 Thu>
 
 **Objectives
