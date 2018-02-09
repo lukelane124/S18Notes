@@ -149,6 +149,7 @@ What are office hours for?
 
 + Communicated throughout a written language: cuneiform
 #+Caption: Cuneiform tablet writing
+#+attr_html: width 300px
 [[./img/CuneiformTablet.png]]
 
 ** Literature: /The Epic of Gilgamesh/
@@ -214,7 +215,7 @@ Mostly derived from needs of scribes, and clerks, doing tax calculations, record
 Scholars of early medicine started taking /notes/ about what methods worked, and those that didn't
 
 
-* TODO Lecture 3 = Ancient Egypt: Finish updating this info.
+* TODO Lecture 3 Ancient Egypt: Finish updating this info.
 :DATE: <2018-01-25 Thu>
 
 **Objectives
@@ -237,7 +238,7 @@ From A Tale of the Shipwrecked Sailor (Maybe from 2500 BC)
 
 + Know that person was fairly intelligent. 
  
-* TODO Lecture 4 = 
+* TODO Lecture 4 
 :DATE: <2018-01-25 Thu>
 
 * TODO Lecture 5
