@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Ditigal Transmitters and Recievers</title>
-<!-- 2018-02-05 Mon 16:06 -->
+<!-- 2018-02-09 Fri 22:01 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Tommy Lane" />
@@ -184,17 +184,33 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1. Transmitter</a></li>
-<li><a href="#sec-2">2. Reciever</a></li>
-<li><a href="#sec-3">3. <span class="todo TODO">TODO</span> Graham-Schmidt: check matrix algebra book on this topic.</a>
+<li><a href="#sec-1">1. Lecture ?</a>
 <ul>
-<li><a href="#sec-3-1">3.1. 1st signal</a></li>
-<li><a href="#sec-3-2">3.2. 2nd &#x2013; Nth signal</a></li>
+<li><a href="#sec-1-1">1.1. Transmitter</a></li>
+<li><a href="#sec-1-2">1.2. Reciever</a></li>
+<li><a href="#sec-1-3">1.3. <span class="todo TODO">TODO</span> Graham-Schmidt: check matrix algebra book on this topic.</a>
+<ul>
+<li><a href="#sec-1-3-1">1.3.1. 1st signal</a></li>
+<li><a href="#sec-1-3-2">1.3.2. 2nd &#x2013; Nth signal</a></li>
 </ul>
 </li>
-<li><a href="#sec-4">4. Fourier Transfrom</a>
+<li><a href="#sec-1-4">1.4. Fourier Transfrom</a>
 <ul>
-<li><a href="#sec-4-1">4.1. <span class="todo TODO">TODO</span> Properties: verify that is correct</a></li>
+<li><a href="#sec-1-4-1">1.4.1. <span class="todo TODO">TODO</span> Properties: verify that is correct</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#sec-2">2. LEcture ?</a>
+<ul>
+<li><a href="#sec-2-1">2.1. Distortionless System</a>
+<ul>
+<li><a href="#sec-2-1-1">2.1.1. Acceptable</a></li>
+</ul>
+</li>
+<li><a href="#sec-2-2">2.2. Freq representation</a></li>
+<li><a href="#sec-2-3">2.3. Bode rep</a></li>
+<li><a href="#sec-2-4">2.4. Filters</a></li>
 </ul>
 </li>
 </ul>
@@ -204,8 +220,11 @@ for the JavaScript code in this tag.
 Use correlators to match input to possible transmitted waveforms
 </p>
 <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> Transmitter</h2>
+<h2 id="sec-1"><span class="section-number-2">1</span> Lecture ?</h2>
 <div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Transmitter</h3>
+<div class="outline-text-3" id="text-1-1">
 
 <div class="figure">
 <p><img src="./img/Digital_reciever.png" alt="Digital_reciever.png" width="300px" />
@@ -215,9 +234,9 @@ Use correlators to match input to possible transmitted waveforms
 </div>
 </div>
 
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> Reciever</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Reciever</h3>
+<div class="outline-text-3" id="text-1-2">
 <p>
 two bits per symbol - four possible wave forms
 </p>
@@ -266,9 +285,9 @@ two bits per symbol - four possible wave forms
 </div>
 </div>
 
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> <span class="todo TODO">TODO</span> Graham-Schmidt: check matrix algebra book on this topic.</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> <span class="todo TODO">TODO</span> Graham-Schmidt: check matrix algebra book on this topic.</h3>
+<div class="outline-text-3" id="text-1-3">
 <p>
 :DEADLINE: <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-02-05 Mon&gt;</span></span>
 </p>
@@ -285,9 +304,9 @@ two bits per symbol - four possible wave forms
 </ul>
 </div>
 
-<div id="outline-container-sec-3-1" class="outline-3">
-<h3 id="sec-3-1"><span class="section-number-3">3.1</span> 1st signal</h3>
-<div class="outline-text-3" id="text-3-1">
+<div id="outline-container-sec-1-3-1" class="outline-4">
+<h4 id="sec-1-3-1"><span class="section-number-4">1.3.1</span> 1st signal</h4>
+<div class="outline-text-4" id="text-1-3-1">
 <p>
 E<sub>s1</sub> = \(||S_{1}||^2\)
 </p>
@@ -302,9 +321,9 @@ $&phi;<sub>1</sub> = \(\frac{S_1(t)}{\sqrt{E_{s1}}}\)
 </div>
 </div>
 
-<div id="outline-container-sec-3-2" class="outline-3">
-<h3 id="sec-3-2"><span class="section-number-3">3.2</span> 2nd &#x2013; Nth signal</h3>
-<div class="outline-text-3" id="text-3-2">
+<div id="outline-container-sec-1-3-2" class="outline-4">
+<h4 id="sec-1-3-2"><span class="section-number-4">1.3.2</span> 2nd &#x2013; Nth signal</h4>
+<div class="outline-text-4" id="text-1-3-2">
 <p>
 <i>Creating a new basis function</i>
 </p>
@@ -353,9 +372,9 @@ r<sub>i</sub>(t) = S<sub>i</sub>(t) - &sum;{S<sub>in</sub>} &phi;<sub>n</sub>(t)
 </div>
 </div>
 
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> Fourier Transfrom</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-sec-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> Fourier Transfrom</h3>
+<div class="outline-text-3" id="text-1-4">
 <ul class="org-ul">
 <li><b>F</b> {g(t)} = G(f) = \(\int_{-\inf}^{\inf} g(t) e^{-j2\pi ft}\)
 </li>
@@ -366,9 +385,9 @@ r<sub>i</sub>(t) = S<sub>i</sub>(t) - &sum;{S<sub>in</sub>} &phi;<sub>n</sub>(t)
 </div>
 
 
-<div id="outline-container-sec-4-1" class="outline-3">
-<h3 id="sec-4-1"><span class="section-number-3">4.1</span> <span class="todo TODO">TODO</span> Properties: verify that <a href="#EQ1">2.1</a> is correct</h3>
-<div class="outline-text-3" id="text-4-1">
+<div id="outline-container-sec-1-4-1" class="outline-4">
+<h4 id="sec-1-4-1"><span class="section-number-4">1.4.1</span> <span class="todo TODO">TODO</span> Properties: verify that <a href="#EQ1">2.1</a> is correct</h4>
+<div class="outline-text-4" id="text-1-4-1">
 <ul class="org-ul">
 <li>Linearity
 <ul class="org-ul">
@@ -410,9 +429,159 @@ r<sub>i</sub>(t) = S<sub>i</sub>(t) - &sum;{S<sub>in</sub>} &phi;<sub>n</sub>(t)
 </div>
 </div>
 </div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> LEcture ?</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+:DATE: <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-02-09 Fri&gt;</span></span>
+</p>
+</div>
+
+<div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Distortionless System</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+x(t) \(->\) \box \(->\) y(t)
+</p>
+</div>
+
+<div id="outline-container-sec-2-1-1" class="outline-4">
+<h4 id="sec-2-1-1"><span class="section-number-4">2.1.1</span> Acceptable</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<ul class="org-ul">
+<li>Amplification//
+</li>
+</ul>
+<p>
+$y(t) = K x(t)$//
+</p>
+
+<ul class="org-ul">
+<li>Delay <br  />
+</li>
+</ul>
+<p>
+\(y(t) = x(t-t_0)\) , $t<sub>0</sub>: positive integer, positive required for causality$//
+</p>
+
+<ul class="org-ul">
+<li>Overall//
+</li>
+</ul>
+<p>
+\(y(t) = K x(t-t_0)\)
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Freq representation</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+\(Y(f)  = K e^{-j2\pi ft_0} X(f)\)
+  = \(H(f)X(f)\) Linear time invariant.
+where \(H(f) = Ke^{-j2\pi ft_0}\)
+</p>
+
+<p>
+\(h(t) = K\delta(t-t_0)\)
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2-3" class="outline-3">
+<h3 id="sec-2-3"><span class="section-number-3">2.3</span> Bode rep</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+\(H(f) = Ke^{-j2\pi ft_0}\)
+</p>
+
+<p>
+\(\abs{H(f)} = K <- constant Mag(gain)\)
+</p>
+
+<p>
+\(\angle{H(f)} = -2\pi ft_0 <- linear, slope = -2\pi f\)
+</p>
+
+
+<p>
+<b>Group Delay</b>: \(t_g(f) = \frac{-1}{2\pi} \frac{d}{df}(\angle{H(f)})\)
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2-4" class="outline-3">
+<h3 id="sec-2-4"><span class="section-number-3">2.4</span> Filters</h3>
+<div class="outline-text-3" id="text-2-4">
+<ul class="org-ul">
+<li>ideal<br  />
+</li>
+<li>realistic
+<ul class="org-ul">
+<li>Lowpass
+</li>
+<li>Highpass
+</li>
+<li>Bandpass
+</li>
+<li>Bandstop
+</li>
+</ul>
+</li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left">filter type</td>
+<td class="left">ideal</td>
+<td class="left">realistic</td>
+</tr>
+
+<tr>
+<td class="left">lowpass</td>
+<td class="left">sharp rect around center</td>
+<td class="left">hill flat top</td>
+</tr>
+
+<tr>
+<td class="left">highpass</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="left">bandpass</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="left">bandstop</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
 <div id="postamble" class="status">
 <p class="author">Author: Tommy Lane</p>
-<p class="date">Created: 2018-02-05 Mon 16:06</p>
+<p class="date">Created: 2018-02-09 Fri 22:01</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>

@@ -1,12 +1,13 @@
 #+TITLE: Ditigal Transmitters and Recievers
 
 Use correlators to match input to possible transmitted waveforms
-* Transmitter
+* Lecture ?
+** Transmitter
 #+CAPTION: internals of Ditigal reciever with two-bit decode
 #+attr_html: :width 300px
 [[./img/Digital_reciever.png]]
 
-* Reciever
+** Reciever
 
 
 two bits per symbol - four possible wave forms
@@ -16,7 +17,7 @@ two bits per symbol - four possible wave forms
 |      2 |   10 |                   180^0 |
 |      3 |   11 |                   270^0 |
 
-* TODO Graham-Schmidt: check matrix algebra book on this topic.
+** TODO Graham-Schmidt: check matrix algebra book on this topic.
 :DEADLINE: <2018-02-05 Mon>
 
 + Signals S_1(t),...,S_m(t)
@@ -24,7 +25,7 @@ two bits per symbol - four possible wave forms
 + \(S_i(t) = \sum{n=1}{N}{S_{in} \phi_n(t)}\)
 + *S_i* = [S_{i1} S_{i2} ... S_{in}]
 
-** 1st signal
+*** 1st signal
 
 E_{s1} = $||S_{1}||^2$
 
@@ -32,7 +33,7 @@ $\phi_1 = $\frac{S_1(t)}{\sqrt{E_{s1}}}$
 
 $S_{11} = \sqrt{E_{s1}}$
 
-** 2nd -- Nth signal
+*** 2nd -- Nth signal
 /Creating a new basis function/
 
 S_{21} = <S_2(t),\phi_1(t)>
@@ -56,14 +57,14 @@ r_2(t) = S_2(t) - S_{21} \phi_1(t) <-- orthogonal to \phi_1(t)
 
 	r_i(t) = S_i(t) - \sum{S_{in}} \phi_n(t)
 
-* Fourier Transfrom
+** Fourier Transfrom
 
 +  *F* {g(t)} = G(f) = $\int_{-\inf}^{\inf} g(t) e^{-j2\pi ft}$
 
 +  *F* $^{-1}$ {G(f)} = g(t) = $\int_{-\inf}^{\inf} G(f) e^{j2\pi ft}$
 
 
-** TODO Properties: verify that [[EQ1]] is correct
+*** TODO Properties: verify that [[EQ1]] is correct
 + Linearity
   + *F* ${a_1 x_1(t) + a_2 x_2(t)}$ = a_1 *F* ${x_1(t)}$ + a_2 *F* ${x_2(t)}$
 + Time Shift
@@ -79,3 +80,52 @@ r_2(t) = S_2(t) - S_{21} \phi_1(t) <-- orthogonal to \phi_1(t)
 
 + Frequency Property
   + *F* $^{-1}{X(f-f_0)} = e^{j2\pi f_0t} \int_{-\inf}^{\inf}{x(t)}$
+
+* LEcture ?
+:DATE: <2018-02-09 Fri>
+
+** Distortionless System
+
+x(t) $->$ \box $->$ y(t)
+
+*** Acceptable
++ Amplification//
+$y(t) = K x(t)$//
+
++ Delay \\
+$y(t) = x(t-t_0)$ , $t_0: positive integer, positive required for causality$//
+
++ Overall//
+$y(t) = K x(t-t_0)$
+
+** Freq representation
+
+$Y(f)  = K e^{-j2\pi ft_0} X(f)$
+  = $H(f)X(f)$ Linear time invariant.
+where $H(f) = Ke^{-j2\pi ft_0}$
+
+$h(t) = K\delta(t-t_0)$
+
+** Bode rep
+$H(f) = Ke^{-j2\pi ft_0}$
+
+$\abs{H(f)} = K <- constant Mag(gain)$
+
+$\angle{H(f)} = -2\pi ft_0 <- linear, slope = -2\pi f$
+
+
+*Group Delay*: $t_g(f) = \frac{-1}{2\pi} \frac{d}{df}(\angle{H(f)})$
+
+** Filters
++ ideal\\
++ realistic
+  + Lowpass
+  + Highpass
+  + Bandpass
+  + Bandstop
+
+| filter type | ideal                    | realistic     |
+| lowpass     | sharp rect around center | hill flat top |
+| highpass    |                          |               |
+| bandpass    |                          |               |
+| bandstop    |                          |               |
