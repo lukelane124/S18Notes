@@ -1,3 +1,12 @@
+* Lecture 1 - History of Communication
+This is mt, I have not a copy of these notes. Mainly discussed how in the last 120 years we/society has gone from using semophores to using modern fast as light coms.
+* Lecture 2 - A cont. of lecture 1
+More info I don't have a copy of....
+* Lecture 3
+
+* Lecture ?
+:DATE: <2018-02-05 Mon>
+
 #+TITLE: Ditigal Transmitters and Recievers
 
 Use correlators to match input to possible transmitted waveforms

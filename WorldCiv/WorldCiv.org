@@ -3,7 +3,7 @@
   :CUSTOM_ID: history-1310---science-and-technology-in-world-civilization
   :END:
 
-  Date: <2019-01-18 Thu> Lecturer: Driggers
+  Date: <2018-01-18 Thu> Lecturer: Driggers
 
 ** Questions? :email: edriggers@tntech.edu *Office Hours*: 
 T-Th: 4:30-6
@@ -24,9 +24,7 @@ What are office hours for?
 
 + Is science value free?
 
-+ How do non-epistimic
-
-values figure into scientific investigations? 
++ How do non-epistimic values figure into scientific investigations? 
 
 + What are the role of
 
@@ -36,7 +34,8 @@ values figure into scientific investigations?
 
 ** What do I mean by Values??? 
 
-+ Epistimic-Traditionally means values in the internal processes of science? like measuremenquantification, ?Testable?
++ Epistimic-Traditionally means values in the internal processes of science? 
+  Like measurement, quantification, ?Testable?
 
 + Non-Epistimic-Means those not in the internal process, often effecting the conceptualization of questions and interpretation of ?data,? things like experiences, psychological worries, political values, ideas about race, gender &c.
 
@@ -54,7 +53,7 @@ values figure into scientific investigations?
 
 + What counts as proper measurement? 
 
-+ Why are conclusions drawn, verified, and communicated to prfessionals and the public(s)?
++ Why are conclusions drawn, verified, and communicated to professionals and the public(s)?
 
 + Is science objective? 
 
@@ -86,7 +85,7 @@ values figure into scientific investigations?
 
 *** Interventions in the environment
 
-+Iron sulfave (Fertilizer) dumping into ocean
++Iron sulfate (Fertilizer) dumping into ocean
 
 * Lecture 2 - Babylon and beyond
 :Lecturer: Driggers
@@ -96,9 +95,9 @@ values figure into scientific investigations?
 + Survey of history if science, technology, medicine, etc. throughout greater Mesopotamian history
 + General Details, geography, Etc.
 
-** TODO Theroretical Point: /Verify quots.../
+** TODO Theoretical Point: /Verify quotes.../
 + where SHOULD we start this class?
-	=Most projessors start much later, with the greeks; look at history through their eyes=
+	=Most professors start much later, with the Greeks; look at history through their eyes=
 
 + The power of narrative
  
@@ -128,18 +127,18 @@ values figure into scientific investigations?
 
 + *Some of the oldest societies*
 
-** Hummurabi and his Code
+** Hammurabi and his Code
 +  If any one finds runaway male or female slaves in the open country and bring them to their masters, the master of the slaves shall pay him two shekels of silver.
 
-+ If any one is commiting a robbery and is caught, then he shall be put to death.
++ If any one is committing a robbery and is caught, then he shall be put to death.
 
-+ If a tevern-keeper (feminine) does not accept corn according to gross weight in payment of a drink, but takes money, and the price of the drink is less than that of the corn, she shall be convicted and thrown into the water.
++ If a tavern-keeper (feminine) does not accept corn according to gross weight in payment of a drink, but takes money, and the price of the drink is less than that of the corn, she shall be convicted and thrown into the water.
 
 + If a son strike his father, his hands be hewn off.
 
 + If a man knock out the teeth if his equal, his teeth shall be knocked out.
 
-+ If a barber, without the knowldedge of his master, but the sign of a slave on a slave not to be sold, the hands of the barber shall be cut off.
++ If a barber, without the knowledge of his master, but the sign of a slave on a slave not to be sold, the hands of the barber shall be cut off.
 
 + If a slave says to his master: "You are not my master" - if they convict him his master shall cut off his ear.
 
@@ -148,8 +147,9 @@ values figure into scientific investigations?
 
 + Civilization arose around present day Iraq
 
-+ Communicated throught a written language: cuneiform
++ Communicated throughout a written language: cuneiform
 #+Caption: Cuneiform tablet writing
+#+attr_html: width 300px
 [[./img/CuneiformTablet.png]]
 
 ** Literature: /The Epic of Gilgamesh/
@@ -157,7 +157,7 @@ values figure into scientific investigations?
 
 + About 12 books, or about 5 epic poems
 
-+ =He saw the Scret, discovered the HIdden, he brought information of (the time) before the Flood. He went on a distance hourney, pushing himeelsf to exhaustion, but then was brought peace= (1.5-8)
++ =He saw the Secret, discovered the Hidden, he brought information of (the time) before the Flood. He went on a distance journey, pushing himself to exhaustion, but then was brought peace= (1.5-8)
 
 ** Technological Achievement
 + Metalworking (Bronze, Copper, Gold, and eventually iron)
@@ -215,7 +215,7 @@ Mostly derived from needs of scribes, and clerks, doing tax calculations, record
 Scholars of early medicine started taking /notes/ about what methods worked, and those that didn't
 
 
-* Lecture 3 = Ancient Egypt
+* TODO Lecture 3 Ancient Egypt: Finish updating this info.
 :DATE: <2018-01-25 Thu>
 
 **Objectives
@@ -227,7 +227,7 @@ Scholars of early medicine started taking /notes/ about what methods worked, and
 
 ** Opening Vignette
 I have a Mining region of the sovereign
-I had goen down to the sea
+I had gown down to the sea
 In a board 120 cubits long
 40 cubits broad
 in which there were 120 sailors for the choicest of Egypt...
@@ -238,26 +238,31 @@ From A Tale of the Shipwrecked Sailor (Maybe from 2500 BC)
 
 + Know that person was fairly intelligent. 
  
+* TODO Lecture 4 
+:DATE: <2018-01-25 Thu>
 
-* TODO Lecture ? - Europe in the Middle Ages; Natural Philosphy: Remind driggers about quadrium
+* TODO Lecture 5
+:DATE: <2018-02-01 Thu>
+
+* TODO Lecture 6 - Europe in the Middle Ages; Natural Philosophy: Remind driggers about quadrium
 :Date: <2018-02-06 Tue>
 
 ** middle ages
-Two contributions midevial west gives us is Universities, and cathedrals
+Two contributions medieval west gives us is Universities, and cathedrals
 :EXAM: <2018-02-15 Tue>
 
 Driggers Dressed in grad robes.\\
 + Hat like what was worn
 	+ used to collect money after each lecture =approximately $20=
 
-+ Robe like Geneve rode, similar to priests
++ Robe like Geneva rode, similar to priests
 + Colors represent 
 
-=Masters means to teacch, or read=\\
+=Masters means to teach, or read=\\
 Mace of university symbolic of power, president wears medallion to illustrate his power.\\
 
-Oxford and cambridge don't give out paper, they give out a =metaphysical= degree, they place hands on the graduate.\\
-Doctorate comes from midevial period.\\
+Oxford and Cambridge don't give out paper, they give out a =metaphysical= degree, they place hands on the graduate.\\
+Doctorate comes from medieval period.\\
 Coat of arms comes from this era also.\\
 
 #+Caption: Elevated teacher of his pupils
@@ -265,35 +270,35 @@ Coat of arms comes from this era also.\\
 
 + Back rows similar to today's lectures.
 
-** Introduciton
+** Introduction
 5th - 15th century \\
-+ philosphy
++ philosophy
 + medicine
 + soci
-+ education in europ
++ education in europe
 
 ** Timeline
 #+Caption: self portrait with mirror.
 [[]]
 Organized this way because we look back, and organize history.//
 Historians place order due to trends, sometimes they get it wrong.\\
-During this time in europe when bad things: wars, plauges - Golden age of islam...
+During this time in Europe when bad things: wars, plagues - Golden age of Islam...
 
 + Collapse of W. Rome (372-410 CE)\\
 + Early middle ages (5th to 10th Century? CE)\\
-+ Hihg Middle ages (1001-1300 CE) \\
-Rennasaince
++ High Middle ages (1001-1300 CE) \\
+Renascence
 + Late middle ages (1301-1500? CE)\\
 
 
-#+Caption: Erupo iat the death of charlemagne 814.
-As islamic civ. cont golden age, they have more emirates, one in spain.\\
-Charl main grandchild of person who stosp advance of /moores/ 
+#+Caption: Europe at the death of Charlemagne 814.
+As Islamic civilization continued golden age, they have more emirates, one in Spain.\\
+Charlemagne main grandchild of person who stops advance of /moores/ 
 
 #+Caption: Modernization map
 byzantine empire expands\\
-Western europe has deurbanization problems, city govs abandoned.
-... Russains start to get organized
+Western Europe has de urbanization problems, city governments abandoned.
+... Russians start to get organized
 
 ** Medieval Times
 + social order\\
@@ -301,30 +306,30 @@ Western europe has deurbanization problems, city govs abandoned.
 + religious life and science?\\ 
 + Scientific production of med uro.
 
-During this time in europe when bad things: wars, plauges - Golden age of islam...
+During this time in Europe when bad things: wars, plagues - Golden age of Islam...
 due to trends, sometimes they get it wrong.\\
-*** Zombie Apoc.
+*** Zombie Apocalypse
 What would happen if we had to abandon the city, where would we go? \\
 Go to manors and agree to work in exchange for essentially =food=
 
-*** Fuedelism
-We don't really know where fuedelism started. Most think england, maybe w. france.
+*** Feudalism
+We don't really know where feudalism started. Most think England, maybe w. France.
 + *Nobles* - highest is king - Obligated to defend other two groups _can become /knight groups/_ \\
 + *Priests* - Praying for everyone all the time. ?Pray for people who might be in purgatory?
 + *Serfs* - People doing the work.
 
 ** Scholarly life
-1050 and teh return of "classical learning"\\
+1050 and the return of "classical learning"\\
 The importance of Aristotle v. Plato in Medieval Europe\\
-+ Aristotle most important, however, plato was taught...?\\
++ Aristotle most important, however, Plato was taught...?\\
 + What is neo-platonism?\\
 	Plato was very abstract and hard to translate.
   	\\Some would say Jesus was a neo-platonist
-=If western translators had done more of Platos works the chances are good that we would see more of his works in this time period=
+=If western translators had done more of Plato's works the chances are good that we would see more of his works in this time period=
 + Medieval Universities
-  + Cirriculum and instruction\\
+  + Curriculum and instruction\\
     Materials/ideas: 7 labors
-    + tribium help make an argument retoric type instruction. You know enough to go on.
+    + trivium help make an argument rhetoric type instruction. You know enough to go on.
     + quadrium
   + Scholasticism
     + knowledge is publishing papers.
@@ -337,28 +342,29 @@ Medieval professor - forms basis of scientific method. Makes artificial rainbow 
 *** William of Ockham - Ockham's razor.
 
 *** Albert Magnus /Albert the great/
-Falcolnry regarded as scholr priest and professor
+Falconry regarded as scholar priest and professor
+
 
 *** Hildegard of Bingen Nun
-Outlier example of intelelual thought done by women\\
-+ Creates a lot of music /like a rennasince women/ 
+Outlier example of intellectual thought done by women\\
++ Creates a lot of music /like a Renascence women/ 
 + Has a medical garden
 + publishes medical material 
 
-*** Cristine depuzon?
-all women city state
+*** Cristine Depuzon?
+Wrote book about all women city state
 
 
 *** Thomas Aquinas
-+ Explains how differnt substances come to gogether to form new material.
++ Explains how different substances come to together to form new material.
 + Aquinas Cosmos
-  + Dantes inferno arises from this.
+  + Dante's inferno arises from this.
 ** Medieval engineering
 + Heavy plows 
 + Trebuchets
 + crossbow
 + could think of castles
-+ Artifical power - wind mills
++ Artificial power - wind mills
 
 ** Music
 hurdi gurdi???
@@ -369,50 +375,50 @@ hurdi gurdi???
     Sutonic virus 
 *** Old theory
 Rats on ships is how the diseases spread.
-+ Physicians and teh plague
++ Physicians and the plague
 
 
 
-#+Caption: Midevial hasmat suit. Beak full of poperii so that =bad air= wouldn't get to you.
-+ Thought maybe astrological upsets caused the plauges.\\
-+ serfs were able to negotiate for higher pay since soo many people died, there wern't many people around to work.\\
-+Chronicles of the plauge
+#+Caption: Medieval hasmat suit. Beak full of popery so that =bad air= wouldn't get to you.
++ Thought maybe astrological upsets caused the plagues.\\
++ serfs were able to negotiate for higher pay since soo many people died, there weren't many people around to work.\\
++Chronicles of the plague
 
-* TODO Lecture ? - test bank, Golden age of islamic philosophy: email driggers about magic early tuesday morning.
+* TODO Lecture  - test bank, Golden age of Islamic philosophy: email driggers about magic early Tuesday morning.
 :DATE: <2018-02-08 Thu>
 
 ** What to expect on test.
 40*2 = 80%
 + m.c.
-+ T/F, if a little false, all teh way false...
-+ Fill in teh blank
++ T/F, if a little false, all the way false...
++ Fill in the blank
 1 essay @ 20 pt
 + Args
 + 3 *P* min
 + be detailed
-+ Don't care about grammer for test essay.
++ Don't care about grammar for test essay.
 
 ** Outline
 + historical case study
-+ transition to byzantine empiter
++ transition to byzantine empirer
 + ...
 
 ** Contextualizing Historical Terms
-+ Ancient greexe (500 - 336 BCE)\\
-+ Golden Age of ISlmaic philosophy (~ 700CE-1300 BCE)\\
-+ The renaissance of eatern and wester europe()\\
++ Ancient Greek (500 - 336 BC)\\
++ Golden Age of Islmaic philosophy (~ 700CE-1300 BCE)\\
++ The renaissance of eastern and wester Europe()\\
 
 ** Islamic era maps 1
-islamic era began after mohammed.
+Islamic era began after mohammed.
 
-High era really ended after conquitors moved in (1497)???
+High era really ended after conquestor moved in (1497)???
 
-battle of toors charles montel stops military campain of moors...
+Battle of toors charles montel stops military campain of moors...
 
-Mongols are busy during this time, Bagdhad sacked during this time.
+Mongols are busy during this time, Baghdad sacked during this time.
 
 ** Islamic era map 2
-arrested dev of middle europe?
+arrested dev of middle Europe?
 
 ** Scientific terms
 
@@ -421,45 +427,45 @@ arrested dev of middle europe?
 + Relative city pops: really high
 
 ** Hydraulic Tech - The qanat
-+ Gently sloping tunnels, moves water from natural aquafers.
++ Gently sloping tunnels, moves water from natural aquifers.
 + These had dams
 
 ** Transmission of tech
 + Literate society\\
-  This was due to teh expectation of each individual reading the quaran every day.
+  This was due to the expectation of each individual reading the quaran every day.
 
-+ Many uses of scitfc instru
++ Many uses of scientific instruments
   + Case of astrolabe
 
-Astrolabe can do over 300 types of calulations.
+Astrolabe can do over 300 types of calculations.
 + Used to calculate direction of Mecca
 + Used to determine time of prayer.
 
-Greeks/someone used to forcast horoscopes.
+Greeks/someone used to forecast horoscopes.
 
 ** Houses of wisdom
-Literal translation factories in city of bahgdad
-+ Recieve patronage from rulers of city\\
+Literal translation factories in city of Baghdad
++ Receive patronage from rulers of city\\
 + Functioned as library for person consumption, although typically he would allow other scholars access.
 
 Also has intellectual effect
-+ While working on greek translators, these translators come up with idea of science and other greek aspects make up base for =good= knowledge.
++ While working on Greek translators, these translators come up with idea of science and other Greek aspects make up base for =good= knowledge.
 
-Able to translate greek texts to their religous texts.
+Able to translate Greek texts to their religious texts.
 
 ** Hunaynn ibn Ishaq (Latin Iohannities) =you/yoo knight us=
-contributing member of islamic society.\\
-fluent in greec syriac ???
+contributing member of Islamic society.\\
+fluent in Greek Syriac ???
 
-Translated greek into syriac and his family translated into arabic.
+Translated Greek into Syriac and his family translated into Arabic.
 
 ** Avicenna - Ibin Sinda
 + natural philosopher and a physician\\
 + wrote book of healing and cannon of medicine
 
-comes from present day iran, understood Aristotle very well.
+comes from present day Iran, understood Aristotle very well.
 
-Saves life of one of royals, allowed to access their library, spends rest of days reflecting on these greek texts.
+Saves life of one of royals, allowed to access their library, spends rest of days reflecting on these Greek texts.
 
 *** Book of healing
 11th century
@@ -468,14 +474,14 @@ Saves life of one of royals, allowed to access their library, spends rest of day
 Criticize and interpreted Aristotle and made writings on this. Also became his own authority.
 
 *** Canon of medicine
-Synthesis of greek medicine ideas, and folk arabic medicine, also poems and thoughts on medicine.\\
+Synthesis of Greek medicine ideas, and folk Arabic medicine, also poems and thoughts on medicine.\\
 has ideas about incorporating feelings into humors.
 
 *Rose water* had healing power, or so thought.
 
 Most middle westerners liked him, he sands down Aristotle
 
-** MEdicine/Biology and Images 2
+** Medicine/Biology and Images 2
 How do you convey images of body, when you have prohibitions on that type of study of body, not allowed to capture essence of a person's body//
 
 Stuff was written to appear as words and shapes.
@@ -489,28 +495,28 @@ Facilitated learning
 ** Midrasas? - law centers
 
 
-** TODO Hospitals: The medieval islamic hospital =in lib=
-Christain physicaians were astonished to see female healers.
+** TODO Hospitals: The medieval Islamic hospital =in lib=
+Christian physicians were astonished to see female healers.
 
 ** Toledo, Spain
 Man religions worked together on translations
 
 Archbishop was able to get scholars of different backgrounds to work together.
 
-*reconquist* redefines boundaries of islamic society.
-+ After this a lot of the texts are left behind, and invading peoples rediscover the eancient greek texts.
+*reconquist* redefines boundaries of Islamic society.
++ After this a lot of the texts are left behind, and invading peoples rediscover the ancient Greek texts.
 
-*Erasure of middle eastern contribution to science from islamic society*
+*Erasure of middle eastern contribution to science from Islamic society*
 
 ** Byzantine empire - Byzantium 2
-Mostly spoke greek here.//
-new streams of latin develope
+Mostly spoke Greek here.//
+new streams of Latin development
 
-RCchirch uses latin
+Roman Catholic Church uses Latin
 
-othodox thurch use greek
+Orthodox church use Greek
 
-Byz's loved horse races, loke today's football.
+Byz's loved horse races, like today's football.
 
 ** Crusades have huge affects, we don't really get into it.....yet.
 
