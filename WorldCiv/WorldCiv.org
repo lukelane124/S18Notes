@@ -1,3 +1,10 @@
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD:<!--/*--><![CDATA[/*><!--*/
+#+HTML_HEAD: .figure p { text-align: left; }
+#+HTML_HEAD: /*]]>*/-->
+#+HTML_HEAD: </style>
+
+
 * History 1310 - Science and Technology in World Civilization
   :PROPERTIES:
   :CUSTOM_ID: history-1310---science-and-technology-in-world-civilization
@@ -224,20 +231,136 @@ Scholars of early medicine started taking /notes/ about what methods worked, and
 + Begin out exploration of the three subjects, mention above in world cultures
 
 + Briefly discuss /Time/
-
-** Opening Vignette
-I have a Mining region of the sovereign
-I had gown down to the sea
-In a board 120 cubits long
-40 cubits broad
-in which there were 120 sailors for the choicest of Egypt...
-before it came they could fortell a gale
-a storm before it existed
+  
+** Opening Vignette <<Poem>>
+I have a Mining region of the sovereign\\
+I had gown down to the sea\\
+In a board 120 cubits long\\
+40 cubits broad\\
+in which there were 120 sailors for the choicest of Egypt...\\
+before it came they could fortell a gale\\
+a storm before it existed\\
 
 From A Tale of the Shipwrecked Sailor (Maybe from 2500 BC)
 
 + Know that person was fairly intelligent. 
-+ 
+  
+** Thinking about time
+\begin{align
+#+attr_html: :width 300px
+[[./img/egypttln.png]]
+- 323 BC Death of Alexander the Great
+- 0
+- 120 AD Roman Empire at its height
+
+*** Gregorian Calendar
+- Introduced in 1582
+- Pop Gegory XIII
+- Modification of Julian Calendar
+  - Julian Calendar introduced by Juluis Ceasar as modification of teh current Roman Calendar, after Rome conquered Egypt
+  - 365 Days, with a leap year every four years in February
+  - 10 Days were dropped to make the celebrarion of Easter (usually at the Vernal Equinox) with the historical time of celebration in the Early chirstian Church
+  - More accurate calculation for leap year*
+    -Driggers talks about this at length. Mainly about why we removed the 10 days from the location near Easter.
+*** Religious Traditions and Time
+- For instance, it's 5776 in teh Jewish Tradition
+  - Traditional Lunar-Solar Calendar (follow moon phases + solar year)
+  - From their makring of creatio
+  - Does not mean taht even Orthodox Jews think that the earth is only about 6,000 years old =(not young each creationist)= ???
+- The current Islamic year is 1437 AH. =In the year of HIjra=
+  - Hijra (Mohammed flees from Mecca to MEdina; run out by political power of hte city)
+  - Lunar Calendar 354 days
+  - Starts teh year 622 CE =year of Hijra=
+*** Egyptian Calendar
+#+attr_html: :width 300px
+#+Caption:Egyption Calendar
+[[./img/egyptcal.png]]
+
+Broken down, mainly followed the exceptionally regular flooding of the Nile.
+
+[[file:img/egyptcalCivil.png]]
+
+Common Era and AFter Common Era
+- *BCE* "Before the common era" used interchangably with B.C or "Before Christ"
+- *CE* / *ACE* "Common Era" used interchangably with A.D. =Anno domini, in the year of our Lord=
+
+** Continuation of discussion from earlier [[Poem]]
+
+   What does this "Primary Source" tell us about Egyptian Societ?
+   - What's a cubit?
+     - Length of measurement, the average man's _forarm_
+   - Ships?
+     - Not sure what he wanted here...
+   - Knowledge that this primary source conveys?
+     
+   - How does this hvae a bearing on science and technological development?
+     Not a clue......
+** Background of Ancient Egypt
+   [[file:img/ancegyptMap.png]]
+   [[file:img/modegyptMap.png]]
+  
+*** The Nile river (The Life line of egypt)
+   [[file:img/modNile.png]]
+   [[file:img/ancNile.png]]
+   
+   - Discussion of the Nile
+     - General Information/History about the nile
+     - Egypt's and its close relationship with the Nile
+     - Religion and the Nile
+*** Advanced Plant knowledge
+    *Example* Cyperus Papyrus - Essentially paper.
+    [[file:img/papyrusPg.png]]
+    
+*** Agricultieral Success
+    - What did egyptions grow to eat
+    - And Drink
+
+    - Examples of Food
+      - Beer (Barley and Emmer) Driggers says this was used mainly to preserve the landowner's grain; however, this misses a crucial aspect of water preservation. 
+	This might not have been a problem for folks in the Nile, but beer was crucial in sailing endeavors.
+      - Wine (Grapes) grains preservation.
+      - Spices 
+	- Garlic, aniseed =the seed of the anise, used in cooking and herbal medicine.=, cinnamon, corriander, cumin, dill, fennel, marjoram, rosemary, and thyme (_BUT NO PEPPER_?)
+      - Meats
+	- Cattle, Quail, --hens raised for eggs MUCH later; dicks, geese)
+      - Fish
+	- Caught with net, spears, traps, and hooks /Seems like modern day fishing no????/
+      - Veggies
+	- beans, cabbage, celery --worst food in world!; chickpeas, peas, onions, lentils
+      - Fruits
+	- apples, dates, figs, jujubes, olives, pomegranates, melons
+      - Sweets/Sweetening Agents
+	- Dates, fig, honey
+
+** Egyptians at Sea
+#+Caption: Lighthouse of Alexandria: Potentially one of the seven wonders
+   [[file:img/7wonderLight.png]]
+   No modern peoples are sure if this lighthouse ever really existed.
+
+** Egyptain Civilization and Society (Organization)
+   This "layout" is much like fudelism in the mideival period in Europe.
+
+   [[file:img/egyptSoc.png]]
+   
+   [[file:img/egyptExpsoc.png]]
+
+** Pharaoh
+   - Description of Pharaoh
+   - Shirtdiscussion of the Expansion fo Egyptian Power
+   - Divine Rule
+*** Religion (Ra)
+    Some scholars would argue that Egypts were monotheists. The argument would be along the lines of Ra was so important all the other gods just faded away.
+    Pharaoh was the emodiment of Ra. when PH died Ra would /reincarnate/ as the next PH in line.
+
+    [[file:img/PHegRA.png]]
+*** Religious tradition "the book of the dead"
+    Didn't disuss the book, as I remember.\\
+    Mainly discuessed how when you die your heart is placed on a scale alongside a feather.
+
+
+   
+    
+
 * TODO Lecture 4 
 :DATE: <2018-01-25 Thu>
 
@@ -384,7 +507,7 @@ Rats on ships is how the diseases spread.
 + serfs were able to negotiate for higher pay since soo many people died, there weren't many people around to work.\\
 +Chronicles of the plague
 
-* TODO Lecture  - test bank, Golden age of Islamic philosophy: email driggers about magic early Tuesday morning.
+* TODO Lecture 7 - test bank, Golden age of Islamic philosophy: email driggers about magic early Tuesday morning.
 :DATE: <2018-02-08 Thu>
 
 ** What to expect on test.
@@ -519,4 +642,22 @@ Orthodox church use Greek
 Byz's loved horse races, like today's football.
 
 ** Crusades have huge affects, we don't really get into it.....yet.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
