@@ -138,3 +138,45 @@ $\angle{H(f)} = -2\pi ft_0 <- linear, slope = -2\pi f$
 | highpass    |                          |               |
 | bandpass    |                          |               |
 | bandstop    |                          |               |
+* LEcture ? - 
+:DATE: <2018-02-12 Mon>
+** TODO Project 
+
+** Fourier Series - Fourier Transform Relationship
+*** Fourier Series
+F.S.    $g(t) = \sum_{-\inf}^{\inf} G_n e^{jn2\i f_0t}$
+
+F.T.	$G(g) = *F*{g(t)}$ &= \sum_{-\inf}^{\inf} G_n *F* {e^{jn2\pi f_ot}}$
+$&= \sum{G_n \delta(f-f_0)}$ -inf -> inf.\\
+ 
+#+Caption: plotting FS, FT.
+
+** Energy spectral density???????????
+   $E_g = \int_{-\inf}^{\inf}|G(f)|^2df$
+
+   $x(t) -> h(t) -> y(t)$ \\
+   $X(f) -> H(f) -> Y(f)$
+
+   $E_y = \int_{-\inf}^{\inf}|X(f)H(f)|^2 df$
+   $= \int_{f_0-\detla{f}}^{f_0+|delta{f}}$
+#+Caption: little bar plot...
+
+
+   *Energy Spectral Density*
+   $\Psi_x (f_0) = \lim_{\Delta f -> 0}\frac{1}{\Delta f}\int_{f_0-\frac{\Delta f}{2}}^{f_0+\frac{\Delta f}{2}}|X(f)|^2 df$
+   $=|X(f_0)|^2$
+
+   *Energy* 
+   $E_x = \int \Psi_x(f) df$
+
+   *Energy int bandwith *B* centered at F_1
+#+Caption: E_X at given freak.
+   $\int_{-f_1-\frac{*B*}{2}}^{-f_1+\frac{*B*}{2}}\Psi_x(f) df =\int_{f_1-\frac{*B*}{2}}^{f_1+\frac{*B*}{2}}\Psi_x(f) df$
+* TODO get units for 
+   let: $g(t) = \Pi(\frac{t}{\Tau}
+#+Caption: rect.
+   What banwidth capacity do we need to pass exactly $90%$ of this signal energy.
+   
+   $E_g = \int |g(t)|^2dt = \Tau$
+   $g(t) -> "Ideal LPF bandwidth B" -> y(t) 90%E_g = 0.9\Tau energy
+#+Caption: 

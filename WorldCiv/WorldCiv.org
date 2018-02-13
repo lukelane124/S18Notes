@@ -218,7 +218,7 @@ Scholars of early medicine started taking /notes/ about what methods worked, and
 * TODO Lecture 3 Ancient Egypt: Finish updating this info.
 :DATE: <2018-01-25 Thu>
 
-**Objectives
+** Objectives
 + Survey of science, medicine, and technology in Ancient Egypt
 
 + Begin out exploration of the three subjects, mention above in world cultures
@@ -237,7 +237,7 @@ a storm before it existed
 From A Tale of the Shipwrecked Sailor (Maybe from 2500 BC)
 
 + Know that person was fairly intelligent. 
- 
++ 
 * TODO Lecture 4 
 :DATE: <2018-01-25 Thu>
 
