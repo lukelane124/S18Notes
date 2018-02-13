@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-% Created 2018-02-09 Fri 22:02
-=======
-% Created 2018-02-06 Tue 22:58
->>>>>>> 3c454601f1ff9d94205f4a5cfa9c0eb24b06acf2
+% Created 2018-02-13 Tue 09:25
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -20,10 +16,7 @@
 \usepackage{amssymb}
 \usepackage{hyperref}
 \tolerance=1000
-<<<<<<< HEAD
 \author{Tommy Lane}
-=======
->>>>>>> 3c454601f1ff9d94205f4a5cfa9c0eb24b06acf2
 \date{\today}
 \title{Ditigal Transmitters and Recievers}
 \hypersetup{
@@ -35,23 +28,6 @@
 \maketitle
 \tableofcontents
 
-<<<<<<< HEAD
-Use correlators to match input to possible transmitted waveforms
-\section{Lecture ?}
-\label{sec-1}
-\subsection{Transmitter}
-\label{sec-1-1}
-\begin{figure}[htb]
-\centering
-\includegraphics[width=.9\linewidth]{./img/Digital_reciever.png}
-\caption{internals of Ditigal reciever with two-bit decode}
-\end{figure}
-
-\subsection{Reciever}
-\label{sec-1-2}
-
-
-=======
 \section{Lecture 1 - History of Communication}
 \label{sec-1}
 This is mt, I have not a copy of these notes. Mainly discussed how in the last 120 years we/society has gone from using semophores to using modern fast as light coms.
@@ -65,11 +41,21 @@ More info I don't have a copy of\ldots{}.
 \label{sec-4}
 :DATE: \textit{<2018-02-05 Mon>}
 
-
-
+Use correlators to match input to possible transmitted waveforms
+\section{Lecture ?}
+\label{sec-5}
 \subsection{Transmitter}
-\label{sec-4-1}
->>>>>>> 3c454601f1ff9d94205f4a5cfa9c0eb24b06acf2
+\label{sec-5-1}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=.9\linewidth]{./img/Digital_reciever.png}
+\caption{internals of Ditigal reciever with two-bit decode}
+\end{figure}
+
+\subsection{Reciever}
+\label{sec-5-2}
+
+
 two bits per symbol - four possible wave forms
 \begin{center}
 \begin{tabular}{rrl}
@@ -81,25 +67,9 @@ symbol & bits & four possible waveforms\\
 \end{tabular}
 \end{center}
 
-<<<<<<< HEAD
 \subsection{{\bfseries\sffamily TODO} Graham-Schmidt: check matrix algebra book on this topic.}
-\label{sec-1-3}
+\label{sec-5-3}
 :DEADLINE: \textit{<2018-02-05 Mon>}
-=======
-\subsection{Reciever}
-\label{sec-4-2}
-Use correlators to match input to possible transmitted waveforms
-
-\begin{figure}[htb]
-\centering
-\includegraphics[width=.9\linewidth]{./img/Digital_reciever.png}
-\caption{internals of Ditigal reciever with two-bit decode}
-\end{figure}
-
-\subsection{{\bfseries\sffamily TODO} Graham-Schmidt: check matrix algebra book on this topic.}
-\label{sec-4-3}
-
->>>>>>> 3c454601f1ff9d94205f4a5cfa9c0eb24b06acf2
 
 \begin{itemize}
 \item Signals S$_{\text{1}}$(t),\ldots{},S$_{\text{m}}$(t)
@@ -109,11 +79,7 @@ Use correlators to match input to possible transmitted waveforms
 \end{itemize}
 
 \subsubsection{1st signal}
-<<<<<<< HEAD
-\label{sec-1-3-1}
-=======
-\label{sec-4-3-1}
->>>>>>> 3c454601f1ff9d94205f4a5cfa9c0eb24b06acf2
+\label{sec-5-3-1}
 
 E$_{\text{s1}}$ = $||S_{1}||^2$
 
@@ -122,11 +88,7 @@ E$_{\text{s1}}$ = $||S_{1}||^2$
 $S_{11} = \sqrt{E_{s1}}$
 
 \subsubsection{2nd -- Nth signal}
-<<<<<<< HEAD
-\label{sec-1-3-2}
-=======
-\label{sec-4-3-2}
->>>>>>> 3c454601f1ff9d94205f4a5cfa9c0eb24b06acf2
+\label{sec-5-3-2}
 \emph{Creating a new basis function}
 
 S$_{\text{21}}$ = <S$_{\text{2}}$(t),$\phi$$_{\text{1}}$(t)>
@@ -153,11 +115,7 @@ r$_{\text{i}}$(t) = S$_{\text{i}}$(t) - $\sum$\{S$_{\text{in}}$\} $\phi$$_{\text
 \end{itemize}
 
 \subsection{Fourier Transfrom}
-<<<<<<< HEAD
-\label{sec-1-4}
-=======
-\label{sec-4-4}
->>>>>>> 3c454601f1ff9d94205f4a5cfa9c0eb24b06acf2
+\label{sec-5-4}
 
 \begin{itemize}
 \item \textbf{F} \{g(t)\} = G(f) = $\int_{-\inf}^{\inf} g(t) e^{-j2\pi ft}$
@@ -167,11 +125,7 @@ r$_{\text{i}}$(t) = S$_{\text{i}}$(t) - $\sum$\{S$_{\text{in}}$\} $\phi$$_{\text
 
 
 \subsubsection{{\bfseries\sffamily TODO} Properties: verify that \ref{EQ1} is correct}
-<<<<<<< HEAD
-\label{sec-1-4-1}
-=======
-\label{sec-4-4-1}
->>>>>>> 3c454601f1ff9d94205f4a5cfa9c0eb24b06acf2
+\label{sec-5-4-1}
 \begin{itemize}
 \item Linearity
 \begin{itemize}
@@ -195,19 +149,18 @@ $\lambda$ = t-t$_{\text{0}}$
 \item \textbf{F} $^{-1}{X(f-f_0)} = e^{j2\pi f_0t} \int_{-\inf}^{\inf}{x(t)}$
 \end{itemize}
 \end{itemize}
-<<<<<<< HEAD
 
 \section{LEcture ?}
-\label{sec-2}
+\label{sec-6}
 :DATE: \textit{<2018-02-09 Fri>}
 
 \subsection{Distortionless System}
-\label{sec-2-1}
+\label{sec-6-1}
 
 x(t) $->$ \box $->$ y(t)
 
 \subsubsection{Acceptable}
-\label{sec-2-1-1}
+\label{sec-6-1-1}
 \begin{itemize}
 \item Amplification//
 \end{itemize}
@@ -224,7 +177,7 @@ $y(t) = x(t-t_0)$ , \$t$_{\text{0}}$: positive integer, positive required for ca
 $y(t) = K x(t-t_0)$
 
 \subsection{Freq representation}
-\label{sec-2-2}
+\label{sec-6-2}
 
 $Y(f)  = K e^{-j2\pi ft_0} X(f)$
   = $H(f)X(f)$ Linear time invariant.
@@ -233,7 +186,7 @@ where $H(f) = Ke^{-j2\pi ft_0}$
 $h(t) = K\delta(t-t_0)$
 
 \subsection{Bode rep}
-\label{sec-2-3}
+\label{sec-6-3}
 $H(f) = Ke^{-j2\pi ft_0}$
 
 $\abs{H(f)} = K <- constant Mag(gain)$
@@ -243,8 +196,8 @@ $\angle{H(f)} = -2\pi ft_0 <- linear, slope = -2\pi f$
 
 \textbf{Group Delay}: $t_g(f) = \frac{-1}{2\pi} \frac{d}{df}(\angle{H(f)})$
 
-\subsection{Filtersl}
-\label{sec-2-4}
+\subsection{Filters}
+\label{sec-6-4}
 \begin{itemize}
 \item ideal\\
 \item realistic
@@ -265,7 +218,45 @@ bandpass &  & \\
 bandstop &  & \\
 \end{tabular}
 \end{center}
-=======
->>>>>>> 3c454601f1ff9d94205f4a5cfa9c0eb24b06acf2
+\section{LEcture ? -}
+\label{sec-7}
+:DATE: \textit{<2018-02-12 Mon>}
+\subsection{{\bfseries\sffamily TODO} Project}
+\label{sec-7-1}
+
+\subsection{Fourier Series - Fourier Transform Relationship}
+\label{sec-7-2}
+\subsubsection{Fourier Series}
+\label{sec-7-2-1}
+F.S.    $g(t) = \sum_{-\inf}^{\inf} G_n e^{jn2\i f_0t}$
+
+F.T.        $G(g) = *F*{g(t)}$ \&= $\sum$$_{\text{-}\inf}^{\inf}$ G$_{\text{n}}$ \textbf{F} \{e$^{\text{jn2}\pi\ \text{f}_{\text{ot}}}$\}\$
+$&= \sum{G_n \delta(f-f_0)}$ -inf -> inf.\\
+
+\subsection{Energy spectral density???????????}
+\label{sec-7-3}
+$E_g = \int_{-\inf}^{\inf}|G(f)|^2df$
+
+$x(t) -> h(t) -> y(t)$ \\
+   $X(f) -> H(f) -> Y(f)$
+
+$E_y = \int_{-\inf}^{\inf}|X(f)H(f)|^2 df$
+$= \int_{f_0-\detla{f}}^{f_0+|delta{f}}$
+\textbf{Energy Spectral Density}
+$\Psi_x (f_0) = \lim_{\Delta f -> 0}\frac{1}{\Delta f}\int_{f_0-\frac{\Delta f}{2}}^{f_0+\frac{\Delta f}{2}}|X(f)|^2 df$
+$=|X(f_0)|^2$
+
+\textbf{Energy} 
+$E_x = \int \Psi_x(f) df$
+
+\textbf{Energy int bandwith *B} centered at F$_{\text{1}}$
+$\int_{-f_1-\frac{*B*}{2}}^{-f_1+\frac{*B*}{2}}\Psi_x(f) df =\int_{f_1-\frac{*B*}{2}}^{f_1+\frac{*B*}{2}}\Psi_x(f) df$
+\section{{\bfseries\sffamily TODO} get units for}
+\label{sec-8}
+let: \$g(t) = $\Pi$(\frac{t}{\Tau}
+What banwidth capacity do we need to pass exactly $90%$ of this signal energy.
+
+$E_g = \int |g(t)|^2dt = \Tau$
+\$g(t) -> "Ideal LPF bandwidth B" -> y(t) 90\%E$_{\text{g}}$ = 0.9T energy
 % Emacs 25.3.1 (Org mode 8.2.10)
 \end{document}
