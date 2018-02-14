@@ -1,4 +1,4 @@
-% Created 2018-02-13 Tue 13:37
+% Created 2018-02-14 Wed 14:20
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -241,7 +241,7 @@ $x(t) -> h(t) -> y(t)$ \\
    $X(f) -> H(f) -> Y(f)$
 
 $E_y = \int_{-\inf}^{\inf}|X(f)H(f)|^2 df$
-$= \int_{f_0-\detla{f}}^{f_0+|delta{f}}$
+$= \int_{f_0-\delta{f}}^{f_0+|delta{f}}$
 \textbf{Energy Spectral Density}
 $\Psi_x (f_0) = \lim_{\Delta f -> 0}\frac{1}{\Delta f}\int_{f_0-\frac{\Delta f}{2}}^{f_0+\frac{\Delta f}{2}}|X(f)|^2 df$
 $=|X(f_0)|^2$
@@ -258,5 +258,29 @@ What banwidth capacity do we need to pass exactly $90%$ of this signal energy.
 
 $E_g = \int |g(t)|^2dt = \Tau$
 \$g(t) -> "Ideal LPF bandwidth B" -> y(t) 90\%E$_{\text{g}}$ = 0.9T energy
+\section{{\bfseries\sffamily TODO} Lecture ? - HW2 review: Hw4; due 2/21; 3.4-2; 3.6-1; 3.7-3 -- see next page; 3.7-4}
+\label{sec-9}
+DATE: \textit{<2018-02-14 Wed>}
+\subsection{Freq shift}
+\label{sec-9-1}
+$g(t)cos(2\pi f_0t) <==> \frac{1}{2}[G(f-f_0)+G(f+f_0)]$
+\subsection{Project specs}
+\label{sec-9-2}
+\subsubsection{Important params}
+\label{sec-9-2-1}
+\begin{itemize}
+\item \textbf{F$_{\text{s}}$} = sample Rate; 8000
+\item bit rate R$_{\text{b}}$ 214
+\item $\frac{F_s}{R_b} = Samples per bit$; 37.3
+\end{itemize}
+
+\$g(t) = $\Pi$(\frac{t}{|tau}\$\\
+    \$E$_{\text{g}}$ = $\tau$\$\\
+    \$y(t) = g(t)*h(t)\$\\
+    \$Y(f) = G(f)H(f)\$\\
+
+H(f) ideal LPF bandwidth B\\
+    What is B to obtain: \$E$_{\text{y}}$ = 0.9 E$_{\text{g}}$\$\\
+    \$E$_{\text{y}}$ \&= $\int$$_{\text{-}\inf}^{\inf}$|Y(f)|$^{\text{2}}$ df \&= $\int$$_{\text{-}\inf}^{\inf}$|G(f)H(f)|$^{\text{2}}$ df \&= $\inf$$_{\text{-B}}^{\text{B}}$|G(f)|$^{\text{2}}$ \&= 2$\inf$$_{\text{0}}^{\text{B}}$$\tau$ sinc$^{\text{2}}$($\pi$ f $\tau$) df = -.0$\tau$\$\\
 % Emacs 25.3.1 (Org mode 8.2.10)
 \end{document}
