@@ -38,7 +38,7 @@ two bits per symbol - four possible wave forms
 
 E_{s1} = $||S_{1}||^2$
 
-$\phi_1 = $\frac{S_1(t)}{\sqrt{E_{s1}}}$
+$\phi_1 = \frac{S_1(t)}{\sqrt{E_{s1}}}$
 
 $S_{11} = \sqrt{E_{s1}}$
 

@@ -4,10 +4,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Ditigal Transmitters and Recievers</title>
-<!-- 2018-02-13 Tue 13:37 -->
+<!-- 2018-02-14 Wed 08:55 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
-<meta  name="author" content="Tommy Lane" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center; }
@@ -192,29 +191,29 @@ for the JavaScript code in this tag.
 <ul>
 <li><a href="#sec-5-1">5.1. Transmitter</a></li>
 <li><a href="#sec-5-2">5.2. Reciever</a></li>
-<li><a href="#sec-5-3">5.3. <span class="todo TODO">TODO</span> Graham-Schmidt: check matrix algebra book on this topic.</a>
-<ul>
-<li><a href="#sec-5-3-1">5.3.1. 1st signal</a></li>
-<li><a href="#sec-5-3-2">5.3.2. 2nd &#x2013; Nth signal</a></li>
 </ul>
 </li>
-<li><a href="#sec-5-4">5.4. Fourier Transfrom</a>
+<li><a href="#sec-6">6. Lecture ?</a>
 <ul>
-<li><a href="#sec-5-4-1">5.4.1. <span class="todo TODO">TODO</span> Properties: verify that is correct</a></li>
+<li><a href="#sec-6-1">6.1. Fourier Transfrom</a>
+<ul>
+<li><a href="#sec-6-1-1">6.1.1. <span class="todo TODO">TODO</span> Properties: verify that is correct</a></li>
 </ul>
 </li>
+<li><a href="#sec-6-2">6.2. <span class="todo TODO">TODO</span> Graham-Schmidt: check matrix algebra book on this topic.</a>
+<ul>
+<li><a href="#sec-6-2-1">6.2.1. 1st signal</a></li>
+<li><a href="#sec-6-2-2">6.2.2. 2nd &#x2013; Nth signal</a></li>
 </ul>
 </li>
-<li><a href="#sec-6">6. LEcture ?</a>
+<li><a href="#sec-6-3">6.3. Distortionless System</a>
 <ul>
-<li><a href="#sec-6-1">6.1. Distortionless System</a>
-<ul>
-<li><a href="#sec-6-1-1">6.1.1. Acceptable</a></li>
+<li><a href="#sec-6-3-1">6.3.1. Acceptable</a></li>
 </ul>
 </li>
-<li><a href="#sec-6-2">6.2. Freq representation</a></li>
-<li><a href="#sec-6-3">6.3. Bode rep</a></li>
-<li><a href="#sec-6-4">6.4. Filters</a></li>
+<li><a href="#sec-6-4">6.4. Freq representation</a></li>
+<li><a href="#sec-6-5">6.5. Bode rep</a></li>
+<li><a href="#sec-6-6">6.6. Filters</a></li>
 </ul>
 </li>
 <li><a href="#sec-7">7. LEcture ? -</a>
@@ -329,10 +328,71 @@ two bits per symbol - four possible wave forms
 </table>
 </div>
 </div>
+</div>
 
-<div id="outline-container-sec-5-3" class="outline-3">
-<h3 id="sec-5-3"><span class="section-number-3">5.3</span> <span class="todo TODO">TODO</span> Graham-Schmidt: check matrix algebra book on this topic.</h3>
-<div class="outline-text-3" id="text-5-3">
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Lecture ?</h2>
+<div class="outline-text-2" id="text-6">
+</div><div id="outline-container-sec-6-1" class="outline-3">
+<h3 id="sec-6-1"><span class="section-number-3">6.1</span> Fourier Transfrom</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li><b>F</b> {g(t)} = G(f) = \(\int_{-\inf}^{\inf} g(t) e^{-j2\pi ft}\)
+</li>
+
+<li><b>F</b> \(^{-1}\) {G(f)} = g(t) = \(\int_{-\inf}^{\inf} G(f) e^{j2\pi ft}\)
+</li>
+</ul>
+</div>
+
+
+<div id="outline-container-sec-6-1-1" class="outline-4">
+<h4 id="sec-6-1-1"><span class="section-number-4">6.1.1</span> <span class="todo TODO">TODO</span> Properties: verify that <a href="#EQ1">2.1</a> is correct</h4>
+<div class="outline-text-4" id="text-6-1-1">
+<ul class="org-ul">
+<li>Linearity
+<ul class="org-ul">
+<li><b>F</b> \({a_1 x_1(t) + a_2 x_2(t)}\) = a<sub>1</sub> <b>F</b> \({x_1(t)}\) + a<sub>2</sub> <b>F</b> \({x_2(t)}\)
+</li>
+</ul>
+</li>
+<li>Time Shift
+<ul class="org-ul">
+<li><b>F</b> \({x(t - T_0)}\) = \(\int_{-\inf}^{\inf} x(t-t_0) e^{-j2\pi ft}\)
+
+<p>
+&lambda; = t-t<sub>0</sub>
+</p>
+
+<p>
+= \(e^{-j2\pi f}\int_{-\inf}^{\inf}{x(\lambda +t_0)}\)
+</p>
+
+<p>
+= e<sup>-j2\pift<sub>0</sub></sup> \(\int_{-\inf}^{inf} x(\lambda) e^{-2\pi f\lambda} d\lambda\) <a id="EQ1" name="EQ1"></a> (EQ1)
+</p>
+
+<p>
+= e<sup>-2j\pift<sub>0</sub></sup> X(f)
+</p>
+</li>
+</ul>
+</li>
+
+<li>Frequency Property
+<ul class="org-ul">
+<li><b>F</b> \(^{-1}{X(f-f_0)} = e^{j2\pi f_0t} \int_{-\inf}^{\inf}{x(t)}\)
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6-2" class="outline-3">
+<h3 id="sec-6-2"><span class="section-number-3">6.2</span> <span class="todo TODO">TODO</span> Graham-Schmidt: check matrix algebra book on this topic.</h3>
+<div class="outline-text-3" id="text-6-2">
 <p>
 :DEADLINE: <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-02-05 Mon&gt;</span></span>
 </p>
@@ -349,15 +409,15 @@ two bits per symbol - four possible wave forms
 </ul>
 </div>
 
-<div id="outline-container-sec-5-3-1" class="outline-4">
-<h4 id="sec-5-3-1"><span class="section-number-4">5.3.1</span> 1st signal</h4>
-<div class="outline-text-4" id="text-5-3-1">
+<div id="outline-container-sec-6-2-1" class="outline-4">
+<h4 id="sec-6-2-1"><span class="section-number-4">6.2.1</span> 1st signal</h4>
+<div class="outline-text-4" id="text-6-2-1">
 <p>
 E<sub>s1</sub> = \(||S_{1}||^2\)
 </p>
 
 <p>
-$&phi;<sub>1</sub> = \(\frac{S_1(t)}{\sqrt{E_{s1}}}\)
+\(\phi_1 = \frac{S_1(t)}{\sqrt{E_{s1}}}\)
 </p>
 
 <p>
@@ -366,9 +426,9 @@ $&phi;<sub>1</sub> = \(\frac{S_1(t)}{\sqrt{E_{s1}}}\)
 </div>
 </div>
 
-<div id="outline-container-sec-5-3-2" class="outline-4">
-<h4 id="sec-5-3-2"><span class="section-number-4">5.3.2</span> 2nd &#x2013; Nth signal</h4>
-<div class="outline-text-4" id="text-5-3-2">
+<div id="outline-container-sec-6-2-2" class="outline-4">
+<h4 id="sec-6-2-2"><span class="section-number-4">6.2.2</span> 2nd &#x2013; Nth signal</h4>
+<div class="outline-text-4" id="text-6-2-2">
 <p>
 <i>Creating a new basis function</i>
 </p>
@@ -413,87 +473,26 @@ r<sub>i</sub>(t) = S<sub>i</sub>(t) - &sum;{S<sub>in</sub>} &phi;<sub>n</sub>(t)
 </p>
 </li>
 </ul>
-</div>
-</div>
-</div>
-
-<div id="outline-container-sec-5-4" class="outline-3">
-<h3 id="sec-5-4"><span class="section-number-3">5.4</span> Fourier Transfrom</h3>
-<div class="outline-text-3" id="text-5-4">
-<ul class="org-ul">
-<li><b>F</b> {g(t)} = G(f) = \(\int_{-\inf}^{\inf} g(t) e^{-j2\pi ft}\)
-</li>
-
-<li><b>F</b> \(^{-1}\) {G(f)} = g(t) = \(\int_{-\inf}^{\inf} G(f) e^{j2\pi ft}\)
-</li>
-</ul>
-</div>
 
 
-<div id="outline-container-sec-5-4-1" class="outline-4">
-<h4 id="sec-5-4-1"><span class="section-number-4">5.4.1</span> <span class="todo TODO">TODO</span> Properties: verify that <a href="#EQ1">2.1</a> is correct</h4>
-<div class="outline-text-4" id="text-5-4-1">
-<ul class="org-ul">
-<li>Linearity
-<ul class="org-ul">
-<li><b>F</b> \({a_1 x_1(t) + a_2 x_2(t)}\) = a<sub>1</sub> <b>F</b> \({x_1(t)}\) + a<sub>2</sub> <b>F</b> \({x_2(t)}\)
-</li>
-</ul>
-</li>
-<li>Time Shift
-<ul class="org-ul">
-<li><b>F</b> \({x(t - T_0)}\) = \(\int_{-\inf}^{\inf} x(t-t_0) e^{-j2\pi ft}\)
-
-<p>
-&lambda; = t-t<sub>0</sub>
-</p>
-
-<p>
-= \(e^{-j2\pi f}\int_{-\inf}^{\inf}{x(\lambda +t_0)}\)
-</p>
-
-<p>
-= e<sup>-j2\pift<sub>0</sub></sup> \(\int_{-\inf}^{inf} x(\lambda) e^{-2\pi f\lambda} d\lambda\) <a id="EQ1" name="EQ1"></a> (EQ1)
-</p>
-
-<p>
-= e<sup>-2j\pift<sub>0</sub></sup> X(f)
-</p>
-</li>
-</ul>
-</li>
-
-<li>Frequency Property
-<ul class="org-ul">
-<li><b>F</b> \(^{-1}{X(f-f_0)} = e^{j2\pi f_0t} \int_{-\inf}^{\inf}{x(t)}\)
-</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-
-<div id="outline-container-sec-6" class="outline-2">
-<h2 id="sec-6"><span class="section-number-2">6</span> LEcture ?</h2>
-<div class="outline-text-2" id="text-6">
 <p>
 :DATE: <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-02-09 Fri&gt;</span></span>
 </p>
 </div>
+</div>
+</div>
 
-<div id="outline-container-sec-6-1" class="outline-3">
-<h3 id="sec-6-1"><span class="section-number-3">6.1</span> Distortionless System</h3>
-<div class="outline-text-3" id="text-6-1">
+<div id="outline-container-sec-6-3" class="outline-3">
+<h3 id="sec-6-3"><span class="section-number-3">6.3</span> Distortionless System</h3>
+<div class="outline-text-3" id="text-6-3">
 <p>
 x(t) \(->\) \box \(->\) y(t)
 </p>
 </div>
 
-<div id="outline-container-sec-6-1-1" class="outline-4">
-<h4 id="sec-6-1-1"><span class="section-number-4">6.1.1</span> Acceptable</h4>
-<div class="outline-text-4" id="text-6-1-1">
+<div id="outline-container-sec-6-3-1" class="outline-4">
+<h4 id="sec-6-3-1"><span class="section-number-4">6.3.1</span> Acceptable</h4>
+<div class="outline-text-4" id="text-6-3-1">
 <ul class="org-ul">
 <li>Amplification//
 </li>
@@ -521,9 +520,9 @@ $y(t) = K x(t)$//
 </div>
 </div>
 
-<div id="outline-container-sec-6-2" class="outline-3">
-<h3 id="sec-6-2"><span class="section-number-3">6.2</span> Freq representation</h3>
-<div class="outline-text-3" id="text-6-2">
+<div id="outline-container-sec-6-4" class="outline-3">
+<h3 id="sec-6-4"><span class="section-number-3">6.4</span> Freq representation</h3>
+<div class="outline-text-3" id="text-6-4">
 <p>
 \(Y(f)  = K e^{-j2\pi ft_0} X(f)\)
   = \(H(f)X(f)\) Linear time invariant.
@@ -536,9 +535,9 @@ where \(H(f) = Ke^{-j2\pi ft_0}\)
 </div>
 </div>
 
-<div id="outline-container-sec-6-3" class="outline-3">
-<h3 id="sec-6-3"><span class="section-number-3">6.3</span> Bode rep</h3>
-<div class="outline-text-3" id="text-6-3">
+<div id="outline-container-sec-6-5" class="outline-3">
+<h3 id="sec-6-5"><span class="section-number-3">6.5</span> Bode rep</h3>
+<div class="outline-text-3" id="text-6-5">
 <p>
 \(H(f) = Ke^{-j2\pi ft_0}\)
 </p>
@@ -558,9 +557,9 @@ where \(H(f) = Ke^{-j2\pi ft_0}\)
 </div>
 </div>
 
-<div id="outline-container-sec-6-4" class="outline-3">
-<h3 id="sec-6-4"><span class="section-number-3">6.4</span> Filters</h3>
-<div class="outline-text-3" id="text-6-4">
+<div id="outline-container-sec-6-6" class="outline-3">
+<h3 id="sec-6-6"><span class="section-number-3">6.6</span> Filters</h3>
+<div class="outline-text-3" id="text-6-6">
 <ul class="org-ul">
 <li>ideal<br  />
 </li>
@@ -706,8 +705,7 @@ $g(t) -&gt; "Ideal LPF bandwidth B" -&gt; y(t) 90%E<sub>g</sub> = 0.9&Tau; energ
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="author">Author: Tommy Lane</p>
-<p class="date">Created: 2018-02-13 Tue 13:37</p>
+<p class="date">Created: 2018-02-14 Wed 08:55</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
