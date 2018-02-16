@@ -2,11 +2,12 @@
 
 Use correlators to match input to possible transmitted waveforms
 * Transmitter
+
+* Reciever
 #+CAPTION: internals of Ditigal reciever with two-bit decode
 #+attr_html: :width 300px
 [[./img/Digital_reciever.png]]
 
-* Reciever
 
 
 two bits per symbol - four possible wave forms
@@ -73,9 +74,9 @@ r_2(t) = S_2(t) - S_{21} \phi_1(t) <-- orthogonal to \phi_1(t)
 
     = $e^{-j2\pi f}\int_{-\inf}^{\inf}{x(\lambda +t_0)}$
 
-    = e^{-j2\pift_0} $\int_{-\inf}^{inf} x(\lambda) e^{-2\pi f\lambda} d\lambda$ <<EQ1>> (EQ1)
+    = e^{-j2\pi ft_0} $\int_{-\inf}^{inf} x(\lambda) e^{-2\pi f\lambda} d\lambda$ <<EQ1>> (EQ1)
 
-    = e^{-2j\pift_0} X(f)
+    = e^{-2j\pi ft_0} X(f)
 
 + Frequency Property
   + *F* $^{-1}{X(f-f_0)} = e^{j2\pi f_0t} \int_{-\inf}^{\inf}{x(t)}$
