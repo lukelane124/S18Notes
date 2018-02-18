@@ -1,0 +1,100 @@
+* TODO Get lecture number for this..
+** Latch 
++ Level sensetive
+*** Dlatch
+
+#+Caption: Signals of a Dlatch.
+#+attr_html: :width 300px
+[[./img/DFFandDLATCHsignals.png]]
+** Flip flop
+
+*** DFF D-Flip flop 
+
++ Edge triggered
+#+Caption: Signals of a DFF.
+#+attr_html: :width 300px
+[[./img/DFFandDLATCHsignals.png]]
+
+*** VHDL code for DFF.
++ If all inputs are not in the sensitivity list, then the circuit is not combinational.
+
+** DFF with muliplexer
+*** TODO grab simulation data from elearn for notes.
+
+** Writing a test bench
++ How is it done?\\
+You must test the functionality of the circuit.
+
+
+** Use componenets and generates.
+
+
+* Chapter 8 Wakerly
+** Serial Adder
+
+#+Caption: Serial Binary adder.
+|       | t_3 | t_2 | t_1 | t_0 |
+| A     |   0 |   1 |   1 |   0 |
+| B     |   0 |   1 |   1 |   1 |
+| C_in0 |   ? |   ? |   ? |   0 |
+|       |     |     |     |     |
+| S     |   1 |   1 |   0 |   1 |
+| C_out |   0 |   1 |   1 |     |
+|       |     |     |     |     | 
+
+  
+** Synchronous System
++ FF are clocked by the same common clock signal
++ Races and hazards are not a problem in synchronous systems ->WHY?
+  + Races: More than 1 signal switching concurrently
+  + Hazards: Unwanted switching transients that may appear at the output of a circuit because differnt path exhibits different propagationn delays.
++ *Not* a problem because the clock takes care of the slower of the race condition.
+
+*** Tasks
++ Minimize and determinte the amount of clock skew in the system
++ Ensure that FF have positive setup and hold time margins =Shown in next slide=
++ Identify asynchro......
+
+#+Caption: Detailed timing diagram showing prop delays and setup and hold times w/ respect to clock.
+
+
+t_ffpd = ff prop delay\\
+t_comb = combinational logic delay\\
+t_setup = time duration prior to the clock edge at which the incoming data to the flip flop should be stable.\\
+t_hold Time duration after the clock edge for data to remain stable.\\
+
+*** So, how fast can I run my adder???
+I want my clock period > (t_ffpd + t_comb + t_setup)\\
+Also, want to make sure that T_hold > t_ffpd + t_comb
+*** clock skew
+#+Caption: Clock skew example.
+clock_skew = Difference in arrival times of the clock signal to different devices.
+
+**** Solution for clock skew
+H-tree clock layout.
+
+
+
+* Lecture ? Synchronizer
+  DATE: <2018-02-13 Tue>
+
+  $T > t_{su} + t_{ffpd}$\\
+  $t_r = T - T_{su}$\\
+  $t_r = meta stability Resolution time$\\
+
+  =Meant time between failure (mtbf)= = Time between the two failures of teh syncrhonizer, What is the propability of a given synchronizer to fail.
+  
+  $MTBF = fn(t_r, f, a, FF)$, f=clock freq, a = freq of aSync input FF = flip flop chars.
+  $MTBF = \frac{e^{\frac{t_r}{\tau}}}{T_0fa}$
+
+  Synchronizing goes hand in hand with handshaking.
+  SMIMIT??? TRIGGEr
+  hysterises?
+
+
+** Timing using Time Quest
+   Data arrival time is the time after launch FF to entering the Latch\\
+   Slack time, bus still coming time,
+   $Data arrival time = Launch clock Delay + Data Delay$
+   $clock uncertainty, and clock pessimism = clock error, can be ~5% error on either side of the clock edge.$
+   $Required time Setup = relationship + Latch edge + clock pessimism + uTsu - Clock uncertainty$

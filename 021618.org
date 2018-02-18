@@ -1,0 +1,16 @@
+* Lecture Symbolic math in MatLab
+DATE: <2018-02-16 Fri>
+
+Mathworld.wolfram.com
+
+#+code
+deltax = 0.001;
+x=0:deltax:10;
+y=sinc(x).^2 %% matlab uses sinc(t) = ((sin(pi*t)/(pi*t)))
+z=cumsum(y)*deltax;
+plot(x,z);
+
+BT= 0.832
+B=0.832/\tau
+
+If an automated system like a cell tower operates as a secondary user of a chanel, who does that system know when to stop interfering?

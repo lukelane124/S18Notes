@@ -1,0 +1,201 @@
+* Lecture 1 - History of Communication
+This is mt, I have not a copy of these notes. Mainly discussed how in the last 120 years we/society has gone from using semophores to using modern fast as light coms.
+* Lecture 2 - A cont. of lecture 1
+More info I don't have a copy of....
+* Lecture 3
+
+* Lecture ?
+:DATE: <2018-02-05 Mon>
+
+#+TITLE: Ditigal Transmitters and Recievers
+
+Use correlators to match input to possible transmitted waveforms
+* Lecture ?
+** Transmitter
+#+CAPTION: internals of Ditigal reciever with two-bit decode
+#+attr_html: :width 300px
+[[./img/Digital_reciever.png]]
+
+** Reciever
+
+
+two bits per symbol - four possible wave forms
+| symbol | bits | four possible waveforms |
+|      0 |   00 |                     0^0 |
+|      1 |   01 |                    90^0 |
+|      2 |   10 |                   180^0 |
+|      3 |   11 |                   270^0 |
+
+** TODO Graham-Schmidt: check matrix algebra book on this topic.
+:DEADLINE: <2018-02-05 Mon>
+
++ Signals S_1(t),...,S_m(t)
++ basis functions \phi_n(t),...,\phi_n(t), N \neq M
++ \(S_i(t) = \sum{n=1}{N}{S_{in} \phi_n(t)}\)
++ *S_i* = [S_{i1} S_{i2} ... S_{in}]
+
+*** 1st signal
+
+E_{s1} = $||S_{1}||^2$
+
+$\phi_1 = $\frac{S_1(t)}{\sqrt{E_{s1}}}$
+
+$S_{11} = \sqrt{E_{s1}}$
+
+*** 2nd -- Nth signal
+/Creating a new basis function/
+
+S_{21} = <S_2(t),\phi_1(t)>
+
+
+
+r_2(t) = S_2(t) - S_{21} \phi_1(t) <-- orthogonal to \phi_1(t)
+
+=If remainted r_i(t) = 0 skip the steps below=
+
++ The part of signal 2 that can't be represented by \phi_1(t).
+	
+	E_{r2} = ||r_2(t)||^2
+	
+	\phi_2(t) = $\frac{r_2(t)}{\sqrt{E_{r2}}}$
+
+	S_{22} = $\sqrt{E_{r2}}$
++ others
+
+	S_{ni} = <S_n(t) , \phi_i(t)> for \phi_i(t) which are defined.
+
+	r_i(t) = S_i(t) - \sum{S_{in}} \phi_n(t)
+
+** Fourier Transfrom
+
++  *F* {g(t)} = G(f) = $\int_{-\inf}^{\inf} g(t) e^{-j2\pi ft}$
+
++  *F* $^{-1}$ {G(f)} = g(t) = $\int_{-\inf}^{\inf} G(f) e^{j2\pi ft}$
+
+
+*** TODO Properties: verify that [[EQ1]] is correct
++ Linearity
+  + *F* ${a_1 x_1(t) + a_2 x_2(t)}$ = a_1 *F* ${x_1(t)}$ + a_2 *F* ${x_2(t)}$
++ Time Shift
+  + *F* ${x(t - T_0)}$ = $\int_{-\inf}^{\inf} x(t-t_0) e^{-j2\pi ft}$
+    
+	\lambda = t-t_0
+
+    = $e^{-j2\pi f}\int_{-\inf}^{\inf}{x(\lambda +t_0)}$
+
+    = e^{-j2\pift_0} $\int_{-\inf}^{inf} x(\lambda) e^{-2\pi f\lambda} d\lambda$ <<EQ1>> (EQ1)
+
+    = e^{-2j\pift_0} X(f)
+
++ Frequency Property
+  + *F* $^{-1}{X(f-f_0)} = e^{j2\pi f_0t} \int_{-\inf}^{\inf}{x(t)}$
+
+* LEcture ?
+:DATE: <2018-02-09 Fri>
+
+** Distortionless System
+
+x(t) $->$ \box $->$ y(t)
+
+*** Acceptable
++ Amplification//
+$y(t) = K x(t)$//
+
++ Delay \\
+$y(t) = x(t-t_0)$ , $t_0: positive integer, positive required for causality$//
+
++ Overall//
+$y(t) = K x(t-t_0)$
+
+** Freq representation
+
+$Y(f)  = K e^{-j2\pi ft_0} X(f)$
+  = $H(f)X(f)$ Linear time invariant.
+where $H(f) = Ke^{-j2\pi ft_0}$
+
+$h(t) = K\delta(t-t_0)$
+
+** Bode rep
+$H(f) = Ke^{-j2\pi ft_0}$
+
+$\abs{H(f)} = K <- constant Mag(gain)$
+
+$\angle{H(f)} = -2\pi ft_0 <- linear, slope = -2\pi f$
+
+
+*Group Delay*: $t_g(f) = \frac{-1}{2\pi} \frac{d}{df}(\angle{H(f)})$
+
+** Filters
++ ideal\\
++ realistic
+  + Lowpass
+  + Highpass
+  + Bandpass
+  + Bandstop
+
+| filter type | ideal                    | realistic     |
+| lowpass     | sharp rect around center | hill flat top |
+| highpass    |                          |               |
+| bandpass    |                          |               |
+| bandstop    |                          |               |
+* LEcture ? - 
+:DATE: <2018-02-12 Mon>
+** TODO Project 
+
+** Fourier Series - Fourier Transform Relationship
+*** Fourier Series
+F.S.    $g(t) = \sum_{-\inf}^{\inf} G_n e^{jn2\i f_0t}$
+
+F.T.	$G(g) = *F*{g(t)}$ &= \sum_{-\inf}^{\inf} G_n *F* {e^{jn2\pi f_ot}}$
+$&= \sum{G_n \delta(f-f_0)}$ -inf -> inf.\\
+ 
+#+Caption: plotting FS, FT.
+
+** Energy spectral density???????????
+   $E_g = \int_{-\inf}^{\inf}|G(f)|^2df$
+
+   $x(t) -> h(t) -> y(t)$ \\
+   $X(f) -> H(f) -> Y(f)$
+
+   $E_y = \int_{-\inf}^{\inf}|X(f)H(f)|^2 df$
+   $= \int_{f_0-\delta{f}}^{f_0+|delta{f}}$
+#+Caption: little bar plot...
+
+
+   *Energy Spectral Density*
+   $\Psi_x (f_0) = \lim_{\Delta f -> 0}\frac{1}{\Delta f}\int_{f_0-\frac{\Delta f}{2}}^{f_0+\frac{\Delta f}{2}}|X(f)|^2 df$
+   $=|X(f_0)|^2$
+
+   *Energy* 
+   $E_x = \int \Psi_x(f) df$
+
+   *Energy int bandwith *B* centered at F_1
+#+Caption: E_X at given freak.
+   $\int_{-f_1-\frac{*B*}{2}}^{-f_1+\frac{*B*}{2}}\Psi_x(f) df =\int_{f_1-\frac{*B*}{2}}^{f_1+\frac{*B*}{2}}\Psi_x(f) df$
+* TODO get units for 
+   let: $g(t) = \Pi(\frac{t}{\Tau}
+#+Caption: rect.
+   What banwidth capacity do we need to pass exactly $90%$ of this signal energy.
+   
+   $E_g = \int |g(t)|^2dt = \Tau$
+   $g(t) -> "Ideal LPF bandwidth B" -> y(t) 90%E_g = 0.9\Tau energy
+#+Caption: 
+* TODO Lecture ? - HW2 review: Hw4; due 2/21; 3.4-2; 3.6-1; 3.7-3 -- see next page; 3.7-4
+DATE: <2018-02-14 Wed>
+** Freq shift
+   $g(t)cos(2\pi f_0t) <==> \frac{1}{2}[G(f-f_0)+G(f+f_0)]$
+** Project specs
+*** Important params
+    + *F_s* = sample Rate; 8000
+    + bit rate R_b 214
+    + $\frac{F_s}{R_b} = Samples per bit$; 37.3
+
+    $g(t) = \Pi(\frac{t}{|tau}$\\
+    $E_g = \tau$\\
+    $y(t) = g(t)*h(t)$\\
+    $Y(f) = G(f)H(f)$\\
+    
+    H(f) ideal LPF bandwidth B\\
+    What is B to obtain: $E_y = 0.9 E_g$\\
+    $E_y &= \int_{-\inf}^{\inf}|Y(f)|^2 df &= \int_{-\inf}^{\inf}|G(f)H(f)|^2 df &= \inf_{-B}^{B}|G(f)|^2 &= 2\inf_{0}^{B}\tau sinc^2(\pi f \tau) df = -.0\tau$\\
+#+Caption: Picture of scaling property
