@@ -179,7 +179,10 @@ $&= \sum{G_n \delta(f-f_0)}$ -inf -> inf.\\
    
    $E_g = \int |g(t)|^2dt = \Tau$
    $g(t) -> "Ideal LPF bandwidth B" -> y(t) 90%E_g = 0.9\Tau energy
-#+Caption: 
+   #+Caption: 
+
+* TODO insert lecture from previous week in here.
+
 * TODO Lecture ? - HW2 review: Hw4; due 2/21; 3.4-2; 3.6-1; 3.7-3 -- see next page; 3.7-4
 DATE: <2018-02-14 Wed>
 ** Freq shift
@@ -199,3 +202,48 @@ DATE: <2018-02-14 Wed>
     What is B to obtain: $E_y = 0.9 E_g$\\
     $E_y &= \int_{-\inf}^{\inf}|Y(f)|^2 df &= \int_{-\inf}^{\inf}|G(f)H(f)|^2 df &= \inf_{-B}^{B}|G(f)|^2 &= 2\inf_{0}^{B}\tau sinc^2(\pi f \tau) df = -.0\tau$\\
 #+Caption: Picture of scaling property
+* Lecture ? - Bell 103 modems specs?
+  :DATE: <2018-02-19 Mon>
+  
+** A history of Modem Sounds:
+   200 Baud to 56K
+   - Early modems sounds tonal, and later, higherspeed modems sounds noisy.
+   - Connection sequence occurs
+   - YT: ckc6XSSh52w
+   - oona.windytan.com/posters/dialup-final.png
+     - Short time fourier transform
+** TODO Choices: Get clarification of stopbits
+   - Answering and originating tones, we will use higher tones.
+     - HIgh tones are answer tones
+     - Data rate 100 bps
+     - USE 2 stop bits. Not the same as the 0start and 1 stop bit.
+     - Use continuous phase, no discontinuity.
+       [[img]
+** TODO HW 5 due 2/26; 3.8-4, 4.2-1, 4,2-7
+   DEADLINE: <2018-02-26 Tue>
+
+** Power Spectral Density PSD
+   Almost a perfect parallel to ESD Watts/Hz
+   - Computed differently
+     - *Autocorrelation* $R_g(\tau) = \lim{t}{\inf} \frac{1}{T} \int{-T\2}{T/2} g*(t) G(t+\tau)$
+     - *Power Spectral Density*   $S_g(f) = *F* {R_g(\tau)}
+   - ESD
+     - autocorrelation
+     - $\psi_g(\tau) = \int_{-\inf}^{\inf} g*(t) g(t+\tau) dt$
+     - ESD $\Psi_g(f) = *F* {\psi_g(\tau)}
+   - Where would we use PSD?
+#+Caption: binary set of data 
+     - A set of data [[img]
+     - Can't take the FT of binary data.
+#+Caption: "trianglular relationship"
+
+** LTI Systems
+$x(t) -> \box -> y(t)$
+
+ESD
+$\Psi_y(f) = \Psi_x(f)|H(f)|^2$
+
+ESP
+$S_y(f) = S_x(f)|H(f)|^2$
+
+** Noise - AWGN Additive White Gaussian Noise
