@@ -250,3 +250,52 @@ $S_y(f) = S_x(f)|H(f)|^2$
 
 ** Noise - AWGN Additive White Gaussian Noise
    
+* Lecture ? - DSB - SC Double Sideband - Suppresed Carrier
+
+$S_{DSB-SC}(t) = m(t) cos(2\pi f_ct)$
+
+$S_{DSB-SC}(f) = \frac{1}{2}[M(f-f_c)+M(f+f_c)]$\\
+shift up by f_c, shift down by f_c
+
+#+Caption: modulator
+#+Caption: Demodulator
+
+** Analyze Frequency and Phase Error
+#+Caption: realistic demod
+
+
+Assume $\delta f$ is small
+Case 1: Frequency error, \delta f\neq 0, arbitrarily set \delta \theta
+
+Case2: no Freq error, \deltaf = 0, \delta \theta arbitrary.
+
+Assume r(t)=S_{DSB-SC} =No noise in channel=
+
+#+Caption: setup
+
+$y(t) = m(t) cos(2\pi f_ct) cos(2\pi f_ct\Delta f)t + \Delta\theta)$
+$= \frac{1}{2}m(t)[cos(2\pi \Delta ft+\Delta \Theta)+cos(2\pi (2f_c+\Deltaf)t+\Delta \theta)]$
+$=\frac{1}{2}m(t)cos(2\Pi\Delta ft+\Delta \Theta) + \frac{1}{2} cos(2\pi (2f_c t+ \Delta f)t + \Delta \theta)$
+#+Caption: ask about where the 2 came from on the right half of the right equation
+
+$z(t) = \frac{1}{2} m(t) cos(2\pi \Delta ft+ \Delta\theta )$
+case 1: $z(t) = \frac{1}{2} m(t) cos(2\pi \Delta ft)$\\
+Unacceptable, even if \Delta f is very small
+
+case 2: $z(t) = \frac{1}{2} m(t) cos(\Delta \theta)$
+Acceptable if \Delta \theta is small (much smaller then 90\deg)
+
+*** Delta \Theta does not affect the noise level.
+
+** Noise - AWGN
+   Additive: noise adds to the signal $r(t) = s(t) + n(t)$ r-recieve, s-transmit, n-noise\\
+   White: Power Sectral Density is constant $S_n(f) = \frac{\eta}{2} Watts/Hz$ S-Power spectral density of noise. eta/2 becuase half power is in negative freaks.
+   Gaussian: probability density function of noies amplitude(voltage)
+   Noise: naturally occuring random source 
+   VAriance of noise is the power of that signal.
+
+** AM (Double Sideband-Large Carrier) dsb-lc
+$S_AM(t) = [A+ m(t)]cos(\omega_c t), \omega_c = 2\pi f_c$
+$S_AM(f) = \frac{!}{2}[\delta(f-f_c)+\delta(f+f_c)]+\frac{1}{2}[M(f-f_c)+M(f+fc)]$
+
+#+Caption: Side band representation
