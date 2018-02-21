@@ -14,3 +14,5 @@ BT= 0.832
 B=0.832/\tau
 
 If an automated system like a cell tower operates as a secondary user of a chanel, who does that system know when to stop interfering?
+
+Essentially the secondary user becomes the primary user.

@@ -184,6 +184,7 @@ $&= \sum{G_n \delta(f-f_0)}$ -inf -> inf.\\
 
 * TODO insert lecture from previous week in here.
 
+
 * TODO Lecture ? - HW2 review: Hw4; due 2/21; 3.4-2; 3.6-1; 3.7-3 -- see next page; 3.7-4
 DATE: <2018-02-14 Wed>
 ** Freq shift
@@ -201,7 +202,7 @@ DATE: <2018-02-14 Wed>
     
     H(f) ideal LPF bandwidth B\\
     What is B to obtain: $E_y = 0.9 E_g$\\
-    $E_y &= \int_{-\inf}^{\inf}|Y(f)|^2 df &= \int_{-\inf}^{\inf}|G(f)H(f)|^2 df &= \inf_{-B}^{B}|G(f)|^2 &= 2\inf_{0}^{B}\tau sinc^2(\pi f \tau) df = -.0\tau$\\
+    $E_y = \int_{-\inf}^{\inf}|Y(f)|^2 df \\= \int_{-\inf}^{\inf}|G(f)H(f)|^2 df = \int_{-B}^{B}|G(f)|^2 &= 2\inf_{0}^{B}\tau sinc^2(\pi f \tau) df = -.0\tau$ \\
 #+Caption: Picture of scaling property
 * Lecture ? - Bell 103 modems specs?
   :DATE: <2018-02-19 Mon>
