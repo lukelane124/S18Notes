@@ -78,9 +78,9 @@ H-tree clock layout.
 * Lecture ? Synchronizer
   DATE: <2018-02-13 Tue>
 
-  $T > t_{su} + t_{ffpd}$\\
-  $t_r = T - T_{su}$\\
-  $t_r = meta stability Resolution time$\\
+  $T > t_{su} + t_{ffpd}$ \\
+  $t_r = T - T_{su}$ \\
+  t_r = meta stability Resolution time \\
 
   =Meant time between failure (mtbf)= = Time between the two failures of teh syncrhonizer, What is the propability of a given synchronizer to fail.
   
