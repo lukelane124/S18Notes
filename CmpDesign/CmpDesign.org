@@ -98,3 +98,10 @@ H-tree clock layout.
    $Data arrival time = Launch clock Delay + Data Delay$
    $clock uncertainty, and clock pessimism = clock error, can be ~5% error on either side of the clock edge.$
    $Required time Setup = relationship + Latch edge + clock pessimism + uTsu - Clock uncertainty$
+
+
+* LEcture ? - Project IP catalog tutorial
+DATE: <2018-02-20 Tue>
+
+** 1-port ram
+   Can only read or write at a time, not both.

@@ -26,6 +26,31 @@ two bits per symbol - four possible wave forms
 |      2 |   10 |                   180^0 |
 |      3 |   11 |                   270^0 |
 
+* Lecture ?
+** Fourier Transfrom
+
++  *F* {g(t)} = G(f) = $\int_{-\inf}^{\inf} g(t) e^{-j2\pi ft}$
+
++  *F* $^{-1}$ {G(f)} = g(t) = $\int_{-\inf}^{\inf} G(f) e^{j2\pi ft}$
+
+
+*** TODO Properties: verify that [[EQ1]] is correct
++ Linearity
+  + *F* ${a_1 x_1(t) + a_2 x_2(t)}$ = a_1 *F* ${x_1(t)}$ + a_2 *F* ${x_2(t)}$
++ Time Shift
+  + *F* ${x(t - T_0)}$ = $\int_{-\inf}^{\inf} x(t-t_0) e^{-j2\pi ft}$
+    
+	\lambda = t-t_0
+
+    = $e^{-j2\pi f}\int_{-\inf}^{\inf}{x(\lambda +t_0)}$
+
+    = e^{-j2\pift_0} $\int_{-\inf}^{inf} x(\lambda) e^{-2\pi f\lambda} d\lambda$ <<EQ1>> (EQ1)
+
+    = e^{-2j\pift_0} X(f)
+
++ Frequency Property
+  + *F* $^{-1}{X(f-f_0)} = e^{j2\pi f_0t} \int_{-\inf}^{\inf}{x(t)}$
+
 ** TODO Graham-Schmidt: check matrix algebra book on this topic.
 :DEADLINE: <2018-02-05 Mon>
 
@@ -66,31 +91,7 @@ r_2(t) = S_2(t) - S_{21} \phi_1(t) <-- orthogonal to \phi_1(t)
 
 	r_i(t) = S_i(t) - \sum{S_{in}} \phi_n(t)
 
-** Fourier Transfrom
 
-+  *F* {g(t)} = G(f) = $\int_{-\inf}^{\inf} g(t) e^{-j2\pi ft}$
-
-+  *F* $^{-1}$ {G(f)} = g(t) = $\int_{-\inf}^{\inf} G(f) e^{j2\pi ft}$
-
-
-*** TODO Properties: verify that [[EQ1]] is correct
-+ Linearity
-  + *F* ${a_1 x_1(t) + a_2 x_2(t)}$ = a_1 *F* ${x_1(t)}$ + a_2 *F* ${x_2(t)}$
-+ Time Shift
-  + *F* ${x(t - T_0)}$ = $\int_{-\inf}^{\inf} x(t-t_0) e^{-j2\pi ft}$
-    
-	\lambda = t-t_0
-
-    = $e^{-j2\pi f}\int_{-\inf}^{\inf}{x(\lambda +t_0)}$
-
-    = e^{-j2\pift_0} $\int_{-\inf}^{inf} x(\lambda) e^{-2\pi f\lambda} d\lambda$ <<EQ1>> (EQ1)
-
-    = e^{-2j\pift_0} X(f)
-
-+ Frequency Property
-  + *F* $^{-1}{X(f-f_0)} = e^{j2\pi f_0t} \int_{-\inf}^{\inf}{x(t)}$
-
-* LEcture ?
 :DATE: <2018-02-09 Fri>
 
 ** Distortionless System
@@ -158,7 +159,7 @@ $&= \sum{G_n \delta(f-f_0)}$ -inf -> inf.\\
    $X(f) -> H(f) -> Y(f)$
 
    $E_y = \int_{-\inf}^{\inf}|X(f)H(f)|^2 df$
-   $= \int_{f_0-\detla{f}}^{f_0+|delta{f}}$
+   $= \int_{f_0-\delta{f}}^{f_0+|delta{f}}$
 #+Caption: little bar plot...
 
 
@@ -179,4 +180,122 @@ $&= \sum{G_n \delta(f-f_0)}$ -inf -> inf.\\
    
    $E_g = \int |g(t)|^2dt = \Tau$
    $g(t) -> "Ideal LPF bandwidth B" -> y(t) 90%E_g = 0.9\Tau energy
-#+Caption: 
+   #+Caption: 
+
+* TODO insert lecture from previous week in here.
+
+
+* TODO Lecture ? - HW2 review: Hw4; due 2/21; 3.4-2; 3.6-1; 3.7-3 -- see next page; 3.7-4
+DATE: <2018-02-14 Wed>
+** Freq shift
+   $g(t)cos(2\pi f_0t) <==> \frac{1}{2}[G(f-f_0)+G(f+f_0)]$
+** Project specs
+*** Important params
+    + *F_s* = sample Rate; 8000
+    + bit rate R_b 214
+    + $\frac{F_s}{R_b} = Samples per bit$; 37.3
+
+    $g(t) = \Pi(\frac{t}{|tau}$\\
+    $E_g = \tau$\\
+    $y(t) = g(t)*h(t)$\\
+    $Y(f) = G(f)H(f)$\\
+    
+    H(f) ideal LPF bandwidth B\\
+    What is B to obtain: $E_y = 0.9 E_g$\\
+    $E_y = \int_{-\inf}^{\inf}|Y(f)|^2 df \\= \int_{-\inf}^{\inf}|G(f)H(f)|^2 df = \int_{-B}^{B}|G(f)|^2 &= 2\inf_{0}^{B}\tau sinc^2(\pi f \tau) df = -.0\tau$ \\
+#+Caption: Picture of scaling property
+* Lecture ? - Bell 103 modems specs?
+  :DATE: <2018-02-19 Mon>
+  
+** A history of Modem Sounds:
+   200 Baud to 56K
+   - Early modems sounds tonal, and later, higherspeed modems sounds noisy.
+   - Connection sequence occurs
+   - YT: ckc6XSSh52w
+   - oona.windytan.com/posters/dialup-final.png
+     - Short time fourier transform
+** DONE Choices: Get clarification of stopbits; Use two '1' bits as stop signal.
+   - Answering and originating tones, we will use higher tones.
+     - HIgh tones are answer tones
+     - Data rate 100 bps
+     - USE 2 stop bits. Not the same as the 0start and 1 stop bit.
+     - Use continuous phase, no discontinuity.
+       [[img]
+** TODO HW 5 due 2/26; 3.8-4, 4.2-1, 4,2-7
+   DEADLINE: <2018-02-26 Tue>
+
+** Power Spectral Density PSD
+   Almost a perfect parallel to ESD Watts/Hz
+   - Computed differently
+     - *Autocorrelation* $R_g(\tau) = \lim{t}{\inf} \frac{1}{T} \int{-T\2}{T/2} g*(t) G(t+\tau)$
+     - *Power Spectral Density*   $S_g(f) = *F* {R_g(\tau)}
+   - ESD
+     - autocorrelation
+     - $\psi_g(\tau) = \int_{-\inf}^{\inf} g*(t) g(t+\tau) dt$
+     - ESD $\Psi_g(f) = *F* {\psi_g(\tau)}
+   - Where would we use PSD?
+#+Caption: binary set of data 
+     - A set of data [[img]
+     - Can't take the FT of binary data.
+#+Caption: "trianglular relationship"
+
+** LTI Systems
+$x(t) -> \box -> y(t)$
+
+ESD
+$\Psi_y(f) = \Psi_x(f)|H(f)|^2$
+
+ESP
+$S_y(f) = S_x(f)|H(f)|^2$
+
+** Noise - AWGN Additive White Gaussian Noise
+   
+* Lecture ? - DSB - SC Double Sideband - Suppresed Carrier
+
+$S_{DSB-SC}(t) = m(t) cos(2\pi f_ct)$
+
+$S_{DSB-SC}(f) = \frac{1}{2}[M(f-f_c)+M(f+f_c)]$\\
+shift up by f_c, shift down by f_c
+
+#+Caption: modulator
+#+Caption: Demodulator
+
+** Analyze Frequency and Phase Error
+#+Caption: realistic demod
+
+
+Assume $\delta f$ is small
+Case 1: Frequency error, \delta f\neq 0, arbitrarily set \delta \theta
+
+Case2: no Freq error, \deltaf = 0, \delta \theta arbitrary.
+
+Assume r(t)=S_{DSB-SC} =No noise in channel=
+
+#+Caption: setup
+
+$y(t) = m(t) cos(2\pi f_ct) cos(2\pi f_ct\Delta f)t + \Delta\theta)$
+$= \frac{1}{2}m(t)[cos(2\pi \Delta ft+\Delta \Theta)+cos(2\pi (2f_c+\Deltaf)t+\Delta \theta)]$
+$=\frac{1}{2}m(t)cos(2\Pi\Delta ft+\Delta \Theta) + \frac{1}{2} cos(2\pi (2f_c t+ \Delta f)t + \Delta \theta)$
+#+Caption: ask about where the 2 came from on the right half of the right equation
+
+$z(t) = \frac{1}{2} m(t) cos(2\pi \Delta ft+ \Delta\theta )$
+case 1: $z(t) = \frac{1}{2} m(t) cos(2\pi \Delta ft)$\\
+Unacceptable, even if \Delta f is very small
+
+case 2: $z(t) = \frac{1}{2} m(t) cos(\Delta \theta)$
+Acceptable if \Delta \theta is small (much smaller then 90\deg)
+
+*** Delta \Theta does not affect the noise level.
+
+** Noise - AWGN
+   Additive: noise adds to the signal $r(t) = s(t) + n(t)$ r-recieve, s-transmit, n-noise\\
+   White: Power Sectral Density is constant $S_n(f) = \frac{\eta}{2} Watts/Hz$ S-Power spectral density of noise. eta/2 becuase half power is in negative freaks.
+   Gaussian: probability density function of noies amplitude(voltage)
+   Noise: naturally occuring random source 
+   VAriance of noise is the power of that signal.
+
+** AM (Double Sideband-Large Carrier) dsb-lc
+$S_AM(t) = [A+ m(t)]cos(\omega_c t), \omega_c = 2\pi f_c$
+$S_AM(f) = \frac{!}{2}[\delta(f-f_c)+\delta(f+f_c)]+\frac{1}{2}[M(f-f_c)+M(f+fc)]$
+
+#+Caption: Side band representation
