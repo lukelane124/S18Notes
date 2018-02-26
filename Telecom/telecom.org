@@ -116,16 +116,6 @@ where $H(f) = Ke^{-j2\pi ft_0}$
 
 $h(t) = K\delta(t-t_0)$
 
-** Bode rep
-$H(f) = Ke^{-j2\pi ft_0}$
-
-$\abs{H(f)} = K <- constant Mag(gain)$
-
-$\angle{H(f)} = -2\pi ft_0 <- linear, slope = -2\pi f$
-
-
-*Group Delay*: $t_g(f) = \frac{-1}{2\pi} \frac{d}{df}(\angle{H(f)})$
-
 ** Filters
 + ideal\\
 + realistic
@@ -139,16 +129,26 @@ $\angle{H(f)} = -2\pi ft_0 <- linear, slope = -2\pi f$
 | highpass    |                          |               |
 | bandpass    |                          |               |
 | bandstop    |                          |               |
+
+** Bode rep
+$H(f) = Ke^{-j2\pi ft_0}$
+
+$|H(f)| = K <- constant Mag(gain)$
+
+$\angle{H(f)} = -2\pi ft_0 <- linear, slope = -2\pi f$
+
+
+*Group Delay*: $t_g(f) = \frac{-1}{2\pi} \frac{d}{df}(\angle{H(f)})$
 * LEcture ? - 
 :DATE: <2018-02-12 Mon>
 ** TODO Project 
 
 ** Fourier Series - Fourier Transform Relationship
 *** Fourier Series
-F.S.    $g(t) = \sum_{-\inf}^{\inf} G_n e^{jn2\i f_0t}$
+F.S.    $g(t) = \sum_{-\inf}^{\inf} G_n e^{jn2\pi f_0t}$
 
-F.T.	$G(g) = *F*{g(t)}$ &= \sum_{-\inf}^{\inf} G_n *F* {e^{jn2\pi f_ot}}$
-$&= \sum{G_n \delta(f-f_0)}$ -inf -> inf.\\
+F.T.	$G(g) = *F*{g(t)}$ = \sum_{-\inf}^{\inf} G_n *F* {e^{jn2\pi f_ot}}$
+$= \sum{G_n \delta(f-f_0)}$ -inf -> inf$ . \\
  
 #+Caption: plotting FS, FT.
 
@@ -174,11 +174,11 @@ $&= \sum{G_n \delta(f-f_0)}$ -inf -> inf.\\
 #+Caption: E_X at given freak.
    $\int_{-f_1-\frac{*B*}{2}}^{-f_1+\frac{*B*}{2}}\Psi_x(f) df =\int_{f_1-\frac{*B*}{2}}^{f_1+\frac{*B*}{2}}\Psi_x(f) df$
 * TODO get units for 
-   let: $g(t) = \Pi(\frac{t}{\Tau}
+   let: $g(t) = \Pi(\frac{t}{\tau}
 #+Caption: rect.
    What banwidth capacity do we need to pass exactly $90%$ of this signal energy.
    
-   $E_g = \int |g(t)|^2dt = \Tau$
+   $E_g = \int |g(t)|^2dt = \tau$
    $g(t) -> "Ideal LPF bandwidth B" -> y(t) 90%E_g = 0.9\Tau energy
    #+Caption: 
 
@@ -202,7 +202,7 @@ DATE: <2018-02-14 Wed>
     
     H(f) ideal LPF bandwidth B\\
     What is B to obtain: $E_y = 0.9 E_g$\\
-    $E_y = \int_{-\inf}^{\inf}|Y(f)|^2 df \\= \int_{-\inf}^{\inf}|G(f)H(f)|^2 df = \int_{-B}^{B}|G(f)|^2 &= 2\inf_{0}^{B}\tau sinc^2(\pi f \tau) df = -.0\tau$ \\
+    $E_y = \int_{-\inf}^{\inf}|Y(f)|^2 df = \int_{-\inf}^{\inf}|G(f)H(f)|^2 df = \int_{-B}^{B}|G(f)|^2 = 2\inf_{0}^{B}\tau sinc^2(\pi f \tau) df = -.0\tau$ \\
 #+Caption: Picture of scaling property
 * Lecture ? - Bell 103 modems specs?
   :DATE: <2018-02-19 Mon>
@@ -227,7 +227,7 @@ DATE: <2018-02-14 Wed>
 ** Power Spectral Density PSD
    Almost a perfect parallel to ESD Watts/Hz
    - Computed differently
-     - *Autocorrelation* $R_g(\tau) = \lim{t}{\inf} \frac{1}{T} \int{-T\2}{T/2} g*(t) G(t+\tau)$
+     - *Autocorrelation* $R_g(\tau) = \lim_{t\to\inf} \frac{1}{T} \int_{\frac{-T}{2}}^{\frac{T}{2}} g^{*}(t) G(t+\tau)$
      - *Power Spectral Density*   $S_g(f) = *F* {R_g(\tau)}
    - ESD
      - autocorrelation
@@ -240,7 +240,15 @@ DATE: <2018-02-14 Wed>
 #+Caption: "trianglular relationship"
 
 ** LTI Systems
-$x(t) -> \box -> y(t)$
+#+BEGIN_SRC ditaa :file ./img/box.png
+            +-------+
+x(t) - >    |       |  -> y(t)
+	    +-------+
+#+END_SRC
+
+#+RESULTS:
+   $x(t)) \to$ [[file:./img/box.png]] $\to y(t)$
+
 
 ESD
 $\Psi_y(f) = \Psi_x(f)|H(f)|^2$
