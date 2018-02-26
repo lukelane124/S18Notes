@@ -1,0 +1,1057 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>Ditigal Transmitters and Recievers</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2018-02-25 17:02:53 CST"/>
+<meta name="author" content="tllane42"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+
+<h1 class="title">Ditigal Transmitters and Recievers</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 Lecture 1 - History of Communication </a></li>
+<li><a href="#sec-2">2 Lecture 2 - A cont. of lecture 1 </a></li>
+<li><a href="#sec-3">3 Lecture 3 </a></li>
+<li><a href="#sec-4">4 Lecture ? </a></li>
+<li><a href="#sec-5">5 Lecture ? </a>
+<ul>
+<li><a href="#sec-5.1">5.1 Transmitter </a></li>
+<li><a href="#sec-5.2">5.2 Reciever </a></li>
+</ul>
+</li>
+<li><a href="#sec-6">6 Lecture ? </a>
+<ul>
+<li><a href="#sec-6.1">6.1 Fourier Transfrom </a>
+<ul>
+<li><a href="#sec-6.1.1">6.1.1 Properties: verify that EQ1 is correct </a></li>
+</ul>
+</li>
+<li><a href="#sec-6.2">6.2 Graham-Schmidt: check matrix algebra book on this topic. </a>
+<ul>
+<li><a href="#sec-6.2.1">6.2.1 1st signal </a></li>
+<li><a href="#sec-6.2.2">6.2.2 2nd &ndash; Nth signal </a></li>
+</ul>
+</li>
+<li><a href="#sec-6.3">6.3 Fourier Transfrom </a>
+<ul>
+<li><a href="#sec-6.3.1">6.3.1 Properties: verify that EQ1 is correct </a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-7">7 LEcture ? </a>
+<ul>
+<li><a href="#sec-7.1">7.1 Distortionless System </a>
+<ul>
+<li><a href="#sec-7.1.1">7.1.1 Acceptable </a></li>
+</ul>
+</li>
+<li><a href="#sec-7.2">7.2 Freq representation </a></li>
+<li><a href="#sec-7.3">7.3 Bode rep </a></li>
+<li><a href="#sec-7.4">7.4 Filters </a></li>
+</ul>
+</li>
+<li><a href="#sec-8">8 LEcture ? - </a>
+<ul>
+<li><a href="#sec-8.1">8.1 Project </a></li>
+<li><a href="#sec-8.2">8.2 Fourier Series - Fourier Transform Relationship </a>
+<ul>
+<li><a href="#sec-8.2.1">8.2.1 Fourier Series </a></li>
+</ul>
+</li>
+<li><a href="#sec-8.3">8.3 Energy spectral density??????????? </a></li>
+</ul>
+</li>
+<li><a href="#sec-9">9 get units for </a></li>
+<li><a href="#sec-10">10 insert lecture from previous week in here. </a></li>
+<li><a href="#sec-11">11 Lecture ? - HW2 review: Hw4; due 2/21; 3.4-2; 3.6-1; 3.7-3 &ndash; see next page; 3.7-4 </a>
+<ul>
+<li><a href="#sec-11.1">11.1 Freq shift </a></li>
+<li><a href="#sec-11.2">11.2 Project specs </a>
+<ul>
+<li><a href="#sec-11.2.1">11.2.1 Important params </a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-12">12 Lecture ? - Bell 103 modems specs? </a>
+<ul>
+<li><a href="#sec-12.1">12.1 A history of Modem Sounds: </a></li>
+<li><a href="#sec-12.2">12.2 Choices: Get clarification of stopbits; Use two '1' bits as stop signal. </a></li>
+<li><a href="#sec-12.3">12.3 HW 5 due 2/26; 3.8-4, 4.2-1, 4,2-7 </a></li>
+<li><a href="#sec-12.4">12.4 Power Spectral Density PSD </a></li>
+<li><a href="#sec-12.5">12.5 LTI Systems </a></li>
+<li><a href="#sec-12.6">12.6 Noise - AWGN Additive White Gaussian Noise </a></li>
+</ul>
+</li>
+<li><a href="#sec-13">13 Lecture ? - DSB - SC Double Sideband - Suppresed Carrier </a>
+<ul>
+<li><a href="#sec-13.1">13.1 Analyze Frequency and Phase Error </a>
+<ul>
+<li><a href="#sec-13.1.1">13.1.1 Delta &Theta; does not affect the noise level. </a></li>
+</ul>
+</li>
+<li><a href="#sec-13.2">13.2 Noise - AWGN </a></li>
+<li><a href="#sec-13.3">13.3 AM (Double Sideband-Large Carrier) dsb-lc </a></li>
+</ul>
+</li>
+<li><a href="#sec-14">14 Lecture ? - EXAM ch1,2,3 4.1-4.3; AM </a></li>
+<li><a href="#sec-15">15 Lecture ? - Efficency </a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Lecture 1 - History of Communication </h2>
+<div class="outline-text-2" id="text-1">
+
+<p>This is mt, I have not a copy of these notes. Mainly discussed how in the last 120 years we/society has gone from using semophores to using modern fast as light coms.
+</p></div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Lecture 2 - A cont. of lecture 1 </h2>
+<div class="outline-text-2" id="text-2">
+
+<p>More info I don't have a copy of&hellip;.
+</p></div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Lecture 3 </h2>
+<div class="outline-text-2" id="text-3">
+
+
+</div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Lecture ? </h2>
+<div class="outline-text-2" id="text-4">
+
+<p>:DATE: <span class="timestamp-wrapper"> <span class="timestamp">2018-02-05 Mon</span></span>
+</p>
+
+<p>
+Use correlators to match input to possible transmitted waveforms
+</p></div>
+
+</div>
+
+<div id="outline-container-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Lecture ? </h2>
+<div class="outline-text-2" id="text-5">
+
+
+</div>
+
+<div id="outline-container-5.1" class="outline-3">
+<h3 id="sec-5.1"><span class="section-number-3">5.1</span> Transmitter </h3>
+<div class="outline-text-3" id="text-5.1">
+
+
+<div class="figure">
+<p><img src="./img/Digital_reciever.png" :width 300px alt="./img/Digital_reciever.png" /></p>
+<p>internals of Ditigal reciever with two-bit decode</p>
+</div>
+
+</div>
+
+</div>
+
+<div id="outline-container-5.2" class="outline-3">
+<h3 id="sec-5.2"><span class="section-number-3">5.2</span> Reciever </h3>
+<div class="outline-text-3" id="text-5.2">
+
+
+
+<p>
+two bits per symbol - four possible wave forms
+</p><table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="right" /><col align="right" /><col align="left" />
+</colgroup>
+<tbody>
+<tr><td>symbol</td><td>bits</td><td>four possible waveforms</td></tr>
+<tr><td>0</td><td>00</td><td>0<sup>0</sup></td></tr>
+<tr><td>1</td><td>01</td><td>90<sup>0</sup></td></tr>
+<tr><td>2</td><td>10</td><td>180<sup>0</sup></td></tr>
+<tr><td>3</td><td>11</td><td>270<sup>0</sup></td></tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Lecture ? </h2>
+<div class="outline-text-2" id="text-6">
+
+
+</div>
+
+<div id="outline-container-6.1" class="outline-3">
+<h3 id="sec-6.1"><span class="section-number-3">6.1</span> Fourier Transfrom </h3>
+<div class="outline-text-3" id="text-6.1">
+
+
+<ul>
+<li>
+ <b>F</b> {g(t)} = G(f) = $&int;<sub>-inf</sub><sup>inf</sup> g(t) e<sup>-j2&pi; ft</sup>$
+
+</li>
+<li>
+ <b>F</b> $<sup>-1</sup>$ {G(f)} = g(t) = $&int;<sub>-inf</sub><sup>inf</sup> G(f) e<sup>j2&pi; ft</sup>$
+
+
+</li>
+</ul>
+
+</div>
+
+<div id="outline-container-6.1.1" class="outline-4">
+<h4 id="sec-6.1.1"><span class="section-number-4">6.1.1</span> <span class="todo TODO"> TODO</span> Properties: verify that <a href="#EQ1">EQ1</a> is correct </h4>
+<div class="outline-text-4" id="text-6.1.1">
+
+<ul>
+<li>
+Linearity
+<ul>
+<li>
+<b>F</b> ${a<sub>1</sub> x<sub>1</sub>(t) + a<sub>2</sub> x<sub>2</sub>(t)}$ = a<sub>1</sub> <b>F</b> ${x<sub>1</sub>(t)}$ + a<sub>2</sub> <b>F</b> ${x<sub>2</sub>(t)}$
+</li>
+</ul>
+</li>
+<li>
+Time Shift
+<ul>
+<li>
+<b>F</b> ${x(t - T<sub>0</sub>)}$ = $&int;<sub>-inf</sub><sup>inf</sup> x(t-t<sub>0</sub>) e<sup>-j2&pi; ft</sup>$
+
+<p>
+&lambda; = t-t<sub>0</sub>
+</p>
+<p>
+= $e<sup>-j2&pi; f</sup>&int;<sub>-inf</sub><sup>inf</sup>{x(&lambda; +t<sub>0</sub>)}$
+</p>
+<p>
+= e<sup>-j2\pift<sub>0</sub></sup> $&int;<sub>-inf</sub><sup>inf</sup> x(&lambda;) e<sup>-2&pi; f&lambda;</sup> d&lambda;$ <a name="EQ1" class="target">EQ1</a> (EQ1)
+</p>
+<p>
+= e<sup>-2j\pift<sub>0</sub></sup> X(f)
+</p>
+</li>
+</ul>
+</li>
+<li>
+Frequency Property
+<ul>
+<li>
+<b>F</b> $<sup>-1</sup>{X(f-f<sub>0</sub>)} = e<sup>j2&pi; f<sub>0t</sub></sup> &int;<sub>-inf</sub><sup>inf</sup>{x(t)}$
+
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-6.2" class="outline-3">
+<h3 id="sec-6.2"><span class="section-number-3">6.2</span> <span class="todo TODO"> TODO</span> Graham-Schmidt: check matrix algebra book on this topic. </h3>
+<div class="outline-text-3" id="text-6.2">
+
+<p>: <span class="timestamp-wrapper"><span class="timestamp-kwd">DEADLINE: </span> <span class="timestamp">2018-02-05 Mon</span></span>
+</p>
+<ul>
+<li>
+Signals S<sub>1</sub>(t),&hellip;,S<sub>m</sub>(t)
+</li>
+<li>
+basis functions &phi;<sub>n</sub>(t),&hellip;,&phi;<sub>n</sub>(t), N &ne; M
+</li>
+<li>
+\(S<sub>i</sub>(t) = &sum;{n=1}{N}{S<sub>in</sub> &phi;<sub>n</sub>(t)}\)
+</li>
+<li>
+<b>S<sub>i</sub></b> = [S<sub>i1</sub> S<sub>i2</sub> &hellip; S<sub>in</sub>]
+
+</li>
+</ul>
+
+</div>
+
+<div id="outline-container-6.2.1" class="outline-4">
+<h4 id="sec-6.2.1"><span class="section-number-4">6.2.1</span> 1st signal </h4>
+<div class="outline-text-4" id="text-6.2.1">
+
+
+<p>
+E<sub>s1</sub> = $||S<sub>1</sub>||<sup>2</sup>$
+</p>
+<p>
+$&phi;<sub>1</sub> = \frac{S<sub>1</sub>(t)}{\sqrt{E<sub>s1</sub>}}$
+</p>
+<p>
+$S<sub>11</sub> = \sqrt{E<sub>s1</sub>}$
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-6.2.2" class="outline-4">
+<h4 id="sec-6.2.2"><span class="section-number-4">6.2.2</span> 2nd &ndash; Nth signal </h4>
+<div class="outline-text-4" id="text-6.2.2">
+
+<p><i>Creating a new basis function</i>
+</p>
+<p>
+S<sub>21</sub> = &lt;S<sub>2</sub>(t),&phi;<sub>1</sub>(t)&gt;
+</p>
+
+
+<p>
+r<sub>2</sub>(t) = S<sub>2</sub>(t) - S<sub>21</sub> &phi;<sub>1</sub>(t) &lt;&ndash; orthogonal to &phi;<sub>1</sub>(t)
+</p>
+<p>
+<code>If remainted r_i(t) = 0 skip the steps below</code>
+</p>
+<ul>
+<li>
+The part of signal 2 that can't be represented by &phi;<sub>1</sub>(t).
+
+<p>
+E<sub>r2</sub> = ||r<sub>2</sub>(t)||<sup>2</sup>
+</p>
+<p>
+&phi;<sub>2</sub>(t) = $\frac{r<sub>2</sub>(t)}{\sqrt{E<sub>r2</sub>}}$
+</p>
+<p>
+S<sub>22</sub> = $\sqrt{E<sub>r2</sub>}$
+</p></li>
+<li>
+others
+
+<p>
+S<sub>ni</sub> = &lt;S<sub>n</sub>(t) , &phi;<sub>i</sub>(t)&gt; for &phi;<sub>i</sub>(t) which are defined.
+</p>
+<p>
+r<sub>i</sub>(t) = S<sub>i</sub>(t) - &sum;{S<sub>in</sub>} &phi;<sub>n</sub>(t)
+</p>
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-6.3" class="outline-3">
+<h3 id="sec-6.3"><span class="section-number-3">6.3</span> Fourier Transfrom </h3>
+<div class="outline-text-3" id="text-6.3">
+
+
+<ul>
+<li>
+ <b>F</b> {g(t)} = G(f) = $&int;<sub>-inf</sub><sup>inf</sup> g(t) e<sup>-j2&pi; ft</sup>$
+
+</li>
+<li>
+ <b>F</b> $<sup>-1</sup>$ {G(f)} = g(t) = $&int;<sub>-inf</sub><sup>inf</sup> G(f) e<sup>j2&pi; ft</sup>$
+
+
+</li>
+</ul>
+
+</div>
+
+<div id="outline-container-6.3.1" class="outline-4">
+<h4 id="sec-6.3.1"><span class="section-number-4">6.3.1</span> <span class="todo TODO"> TODO</span> Properties: verify that <a href="#EQ1">EQ1</a> is correct </h4>
+<div class="outline-text-4" id="text-6.3.1">
+
+<ul>
+<li>
+Linearity
+<ul>
+<li>
+<b>F</b> ${a<sub>1</sub> x<sub>1</sub>(t) + a<sub>2</sub> x<sub>2</sub>(t)}$ = a<sub>1</sub> <b>F</b> ${x<sub>1</sub>(t)}$ + a<sub>2</sub> <b>F</b> ${x<sub>2</sub>(t)}$
+</li>
+</ul>
+</li>
+<li>
+Time Shift
+<ul>
+<li>
+<b>F</b> ${x(t - T<sub>0</sub>)}$ = $&int;<sub>-inf</sub><sup>inf</sup> x(t-t<sub>0</sub>) e<sup>-j2&pi; ft</sup>$
+
+<p>
+&lambda; = t-t<sub>0</sub>
+</p>
+<p>
+= $e<sup>-j2&pi; f</sup>&int;<sub>-inf</sub><sup>inf</sup>{x(&lambda; +t<sub>0</sub>)}$
+</p>
+<p>
+= e<sup>-j2\pift<sub>0</sub></sup> $&int;<sub>-inf</sub><sup>inf</sup> x(&lambda;) e<sup>-2&pi; f&lambda;</sup> d&lambda;$ <a name="EQ1" class="target">EQ1</a> (EQ1)
+</p>
+<p>
+= e<sup>-2j\pift<sub>0</sub></sup> X(f)
+</p>
+</li>
+</ul>
+</li>
+<li>
+Frequency Property
+<ul>
+<li>
+<b>F</b> $<sup>-1</sup>{X(f-f<sub>0</sub>)} = e<sup>j2&pi; f<sub>0t</sub></sup> &int;<sub>-inf</sub><sup>inf</sup>{x(t)}$
+
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> LEcture ? </h2>
+<div class="outline-text-2" id="text-7">
+
+<p>:DATE: <span class="timestamp-wrapper"> <span class="timestamp">2018-02-09 Fri</span></span>
+</p>
+
+</div>
+
+<div id="outline-container-7.1" class="outline-3">
+<h3 id="sec-7.1"><span class="section-number-3">7.1</span> Distortionless System </h3>
+<div class="outline-text-3" id="text-7.1">
+
+
+<p>
+x(t) $-&gt;$ \box $-&gt;$ y(t)
+</p>
+
+</div>
+
+<div id="outline-container-7.1.1" class="outline-4">
+<h4 id="sec-7.1.1"><span class="section-number-4">7.1.1</span> Acceptable </h4>
+<div class="outline-text-4" id="text-7.1.1">
+
+<ul>
+<li>
+Amplification//
+</li>
+</ul>
+
+<p>$y(t) = K x(t)$//
+</p>
+<ul>
+<li>
+Delay <br/>
+</li>
+</ul>
+
+<p>$y(t) = x(t-t<sub>0</sub>)$ , $t<sub>0</sub>: positive integer, positive required for causality$//
+</p>
+<ul>
+<li>
+Overall//
+</li>
+</ul>
+
+<p>$y(t) = K x(t-t<sub>0</sub>)$
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-7.2" class="outline-3">
+<h3 id="sec-7.2"><span class="section-number-3">7.2</span> Freq representation </h3>
+<div class="outline-text-3" id="text-7.2">
+
+
+<p>
+$Y(f)  = K e<sup>-j2&pi; ft<sub>0</sub></sup> X(f)$
+= $H(f)X(f)$ Linear time invariant.
+where $H(f) = Ke<sup>-j2&pi; ft<sub>0</sub></sup>$
+</p>
+<p>
+$h(t) = K&delta;(t-t<sub>0</sub>)$
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-7.3" class="outline-3">
+<h3 id="sec-7.3"><span class="section-number-3">7.3</span> Bode rep </h3>
+<div class="outline-text-3" id="text-7.3">
+
+<p>$H(f) = Ke<sup>-j2&pi; ft<sub>0</sub></sup>$
+</p>
+<p>
+$\abs{H(f)} = K &lt;- constant Mag(gain)$
+</p>
+<p>
+$&ang;{H(f)} = -2&pi; ft<sub>0</sub> &lt;- linear, slope = -2&pi; f$
+</p>
+
+<p>
+<b>Group Delay</b>: $t<sub>g</sub>(f) = \frac{-1}{2&pi;} \frac{d}{df}(&ang;{H(f)})$
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-7.4" class="outline-3">
+<h3 id="sec-7.4"><span class="section-number-3">7.4</span> Filters </h3>
+<div class="outline-text-3" id="text-7.4">
+
+<ul>
+<li>
+ideal<br/>
+</li>
+<li>
+realistic
+<ul>
+<li>
+Lowpass
+</li>
+<li>
+Highpass
+</li>
+<li>
+Bandpass
+</li>
+<li>
+Bandstop
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" /><col align="left" />
+</colgroup>
+<tbody>
+<tr><td>filter type</td><td>ideal</td><td>realistic</td></tr>
+<tr><td>lowpass</td><td>sharp rect around center</td><td>hill flat top</td></tr>
+<tr><td>highpass</td><td></td><td></td></tr>
+<tr><td>bandpass</td><td></td><td></td></tr>
+<tr><td>bandstop</td><td></td><td></td></tr>
+</tbody>
+</table>
+
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-8" class="outline-2">
+<h2 id="sec-8"><span class="section-number-2">8</span> LEcture ? - </h2>
+<div class="outline-text-2" id="text-8">
+
+<p>:DATE: <span class="timestamp-wrapper"> <span class="timestamp">2018-02-12 Mon</span></span>
+</p>
+</div>
+
+<div id="outline-container-8.1" class="outline-3">
+<h3 id="sec-8.1"><span class="section-number-3">8.1</span> <span class="todo TODO"> TODO</span> Project </h3>
+<div class="outline-text-3" id="text-8.1">
+
+
+</div>
+
+</div>
+
+<div id="outline-container-8.2" class="outline-3">
+<h3 id="sec-8.2"><span class="section-number-3">8.2</span> Fourier Series - Fourier Transform Relationship </h3>
+<div class="outline-text-3" id="text-8.2">
+
+
+</div>
+
+<div id="outline-container-8.2.1" class="outline-4">
+<h4 id="sec-8.2.1"><span class="section-number-4">8.2.1</span> Fourier Series </h4>
+<div class="outline-text-4" id="text-8.2.1">
+
+<p>F.S.    $g(t) = &sum;<sub>-inf</sub><sup>inf</sup> G<sub>n</sub> e<sup>jn2\i f<sub>0t</sub></sup>$
+</p>
+<p>
+F.T.    $G(g) = <b>F*{g(t)}$ &amp;= &sum;<sub>-inf</sub><sup>inf</sup> G<sub>n</sub> *F</b> {e<sup>jn2&pi; f<sub>ot</sub></sup>}$
+$&amp;= &sum;{G<sub>n</sub> &delta;(f-f<sub>0</sub>)}$ -inf -&gt; inf.<br/>
+</p>
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-8.3" class="outline-3">
+<h3 id="sec-8.3"><span class="section-number-3">8.3</span> Energy spectral density??????????? </h3>
+<div class="outline-text-3" id="text-8.3">
+
+<p>$E<sub>g</sub> = &int;<sub>-inf</sub><sup>inf</sup>|G(f)|<sup>2df</sup>$
+</p>
+<p>
+$x(t) -&gt; h(t) -&gt; y(t)$ <br/>
+$X(f) -&gt; H(f) -&gt; Y(f)$
+</p>
+<p>
+$E<sub>y</sub> = &int;<sub>-inf</sub><sup>inf</sup>|X(f)H(f)|<sup>2</sup> df$
+$= &int;<sub>f<sub>0</sub>-&delta;{f}</sub><sup>f<sub>0</sub>+|delta{f}</sup>$
+</p>
+
+<p>
+<b>Energy Spectral Density</b>
+$&Psi;<sub>x</sub> (f<sub>0</sub>) = lim<sub>&Delta; f -&gt; 0</sub>\frac{1}{&Delta; f}&int;<sub>f<sub>0</sub>-\frac{&Delta; f}{2}</sub><sup>f<sub>0</sub>+\frac{&Delta; f}{2}</sup>|X(f)|<sup>2</sup> df$
+$=|X(f<sub>0</sub>)|<sup>2</sup>$
+</p>
+<p>
+<b>Energy</b> 
+$E<sub>x</sub> = &int; &Psi;<sub>x</sub>(f) df$
+</p>
+<p>
+<b>Energy int bandwith *B</b> centered at F<sub>1</sub>
+$&int;<sub>-f<sub>1</sub>-\frac{<b>B</b>}{2}</sub><sup>-f<sub>1</sub>+\frac{<b>B</b>}{2}</sup>&Psi;<sub>x</sub>(f) df =&int;<sub>f<sub>1</sub>-\frac{<b>B</b>}{2}</sub><sup>f<sub>1</sub>+\frac{<b>B</b>}{2}</sup>&Psi;<sub>x</sub>(f) df$
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-9" class="outline-2">
+<h2 id="sec-9"><span class="section-number-2">9</span> <span class="todo TODO"> TODO</span> get units for </h2>
+<div class="outline-text-2" id="text-9">
+
+<p>let: $g(t) = &Pi;(\frac{t}{&Tau;}
+What banwidth capacity do we need to pass exactly $90%$ of this signal energy.
+</p>
+<p>
+$E<sub>g</sub> = &int; |g(t)|<sup>2dt</sup> = &Tau;$
+$g(t) -&gt; "Ideal LPF bandwidth B" -&gt; y(t) 90%E<sub>g</sub> = 0.9&Tau; energy
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-10" class="outline-2">
+<h2 id="sec-10"><span class="section-number-2">10</span> <span class="todo TODO"> TODO</span> insert lecture from previous week in here. </h2>
+<div class="outline-text-2" id="text-10">
+
+
+
+</div>
+
+</div>
+
+<div id="outline-container-11" class="outline-2">
+<h2 id="sec-11"><span class="section-number-2">11</span> <span class="todo TODO"> TODO</span> Lecture ? - HW2 review: Hw4; due 2/21; 3.4-2; 3.6-1; 3.7-3 &ndash; see next page; 3.7-4 </h2>
+<div class="outline-text-2" id="text-11">
+
+<p>DATE: <span class="timestamp-wrapper"> <span class="timestamp">2018-02-14 Wed</span></span>
+</p>
+</div>
+
+<div id="outline-container-11.1" class="outline-3">
+<h3 id="sec-11.1"><span class="section-number-3">11.1</span> Freq shift </h3>
+<div class="outline-text-3" id="text-11.1">
+
+<p>$g(t)cos(2&pi; f<sub>0t</sub>) &lt;==&gt; \frac{1}{2}[G(f-f<sub>0</sub>)+G(f+f<sub>0</sub>)]$
+</p></div>
+
+</div>
+
+<div id="outline-container-11.2" class="outline-3">
+<h3 id="sec-11.2"><span class="section-number-3">11.2</span> Project specs </h3>
+<div class="outline-text-3" id="text-11.2">
+
+
+</div>
+
+<div id="outline-container-11.2.1" class="outline-4">
+<h4 id="sec-11.2.1"><span class="section-number-4">11.2.1</span> Important params </h4>
+<div class="outline-text-4" id="text-11.2.1">
+
+<ul>
+<li>
+<b>F<sub>s</sub></b> = sample Rate; 8000
+</li>
+<li>
+bit rate R<sub>b</sub> 214
+</li>
+<li>
+$\frac{F<sub>s</sub>}{R<sub>b</sub>} = Samples per bit$; 37.3
+
+</li>
+</ul>
+
+<p>$g(t) = &Pi;(\frac{t}{|tau}$<br/>
+$E<sub>g</sub> = &tau;$<br/>
+$y(t) = g(t)*h(t)$<br/>
+$Y(f) = G(f)H(f)$<br/>
+</p>
+<p>
+H(f) ideal LPF bandwidth B<br/>
+What is B to obtain: $E<sub>y</sub> = 0.9 E<sub>g</sub>$<br/>
+$E<sub>y</sub> = &int;<sub>-inf</sub><sup>inf</sup>|Y(f)|<sup>2</sup> df \\= &int;<sub>-inf</sub><sup>inf</sup>|G(f)H(f)|<sup>2</sup> df = &int;<sub>-B</sub><sup>B</sup>|G(f)|<sup>2</sup> &amp;= 2inf<sub>0</sub><sup>B</sup>&tau; sinc<sup>2</sup>(&pi; f &tau;) df = -.0&tau;$ <br/>
+</p></div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-12" class="outline-2">
+<h2 id="sec-12"><span class="section-number-2">12</span> Lecture ? - Bell 103 modems specs? </h2>
+<div class="outline-text-2" id="text-12">
+
+<p>:DATE: <span class="timestamp-wrapper"> <span class="timestamp">2018-02-19 Mon</span></span>
+</p>
+
+</div>
+
+<div id="outline-container-12.1" class="outline-3">
+<h3 id="sec-12.1"><span class="section-number-3">12.1</span> A history of Modem Sounds: </h3>
+<div class="outline-text-3" id="text-12.1">
+
+<p>200 Baud to 56K
+</p><ul>
+<li>
+Early modems sounds tonal, and later, higherspeed modems sounds noisy.
+</li>
+<li>
+Connection sequence occurs
+</li>
+<li>
+YT: ckc6XSSh52w
+</li>
+<li>
+oona.windytan.com/posters/dialup-final.png
+<ul>
+<li>
+Short time fourier transform
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-12.2" class="outline-3">
+<h3 id="sec-12.2"><span class="section-number-3">12.2</span> <span class="done DONE"> DONE</span> Choices: Get clarification of stopbits; Use two '1' bits as stop signal. </h3>
+<div class="outline-text-3" id="text-12.2">
+
+<ul>
+<li>
+Answering and originating tones, we will use higher tones.
+<ul>
+<li>
+HIgh tones are answer tones
+</li>
+<li>
+Data rate 100 bps
+</li>
+<li>
+USE 2 stop bits. Not the same as the 0start and 1 stop bit.
+</li>
+<li>
+Use continuous phase, no discontinuity.
+[[img]
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-12.3" class="outline-3">
+<h3 id="sec-12.3"><span class="section-number-3">12.3</span> <span class="todo TODO"> TODO</span> HW 5 due 2/26; 3.8-4, 4.2-1, 4,2-7 </h3>
+<div class="outline-text-3" id="text-12.3">
+
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">DEADLINE: </span> <span class="timestamp">2018-02-26 Tue</span></span><br/>
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-12.4" class="outline-3">
+<h3 id="sec-12.4"><span class="section-number-3">12.4</span> Power Spectral Density PSD </h3>
+<div class="outline-text-3" id="text-12.4">
+
+<p>Almost a perfect parallel to ESD Watts/Hz
+</p><ul>
+<li>
+Computed differently
+<ul>
+<li>
+<b>Autocorrelation</b> $R<sub>g</sub>(&tau;) = lim{t}{inf} \frac{1}{T} &int;{-T\2}{T/2} g*(t) G(t+&tau;)$
+</li>
+<li>
+<b>Power Spectral Density</b>   $S<sub>g</sub>(f) = <b>F</b> {R<sub>g</sub>(&tau;)}
+</li>
+</ul>
+</li>
+<li>
+ESD
+<ul>
+<li>
+autocorrelation
+</li>
+<li>
+$&psi;<sub>g</sub>(&tau;) = &int;<sub>-inf</sub><sup>inf</sup> g*(t) g(t+&tau;) dt$
+</li>
+<li>
+ESD $&Psi;<sub>g</sub>(f) = <b>F</b> {&psi;<sub>g</sub>(&tau;)}
+</li>
+</ul>
+</li>
+<li>
+Where would we use PSD?
+<ul>
+<li>
+A set of data [[img]
+</li>
+<li>
+Can't take the FT of binary data.
+
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-12.5" class="outline-3">
+<h3 id="sec-12.5"><span class="section-number-3">12.5</span> LTI Systems </h3>
+<div class="outline-text-3" id="text-12.5">
+
+<p>$x(t) -&gt; \box -&gt; y(t)$
+</p>
+<p>
+ESD
+$&Psi;<sub>y</sub>(f) = &Psi;<sub>x</sub>(f)|H(f)|<sup>2</sup>$
+</p>
+<p>
+ESP
+$S<sub>y</sub>(f) = S<sub>x</sub>(f)|H(f)|<sup>2</sup>$
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-12.6" class="outline-3">
+<h3 id="sec-12.6"><span class="section-number-3">12.6</span> Noise - AWGN Additive White Gaussian Noise </h3>
+<div class="outline-text-3" id="text-12.6">
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-13" class="outline-2">
+<h2 id="sec-13"><span class="section-number-2">13</span> Lecture ? - DSB - SC Double Sideband - Suppresed Carrier </h2>
+<div class="outline-text-2" id="text-13">
+
+
+<p>
+$S<sub>DSB-SC</sub>(t) = m(t) cos(2&pi; f<sub>ct</sub>)$
+</p>
+<p>
+$S<sub>DSB-SC</sub>(f) = \frac{1}{2}[M(f-f<sub>c</sub>)+M(f+f<sub>c</sub>)]$<br/>
+shift up by f<sub>c</sub>, shift down by f<sub>c</sub>
+</p>
+
+
+</div>
+
+<div id="outline-container-13.1" class="outline-3">
+<h3 id="sec-13.1"><span class="section-number-3">13.1</span> Analyze Frequency and Phase Error </h3>
+<div class="outline-text-3" id="text-13.1">
+
+
+
+<p>
+Assume $&Delta; f$ is small
+Case 1: Frequency error, &Delta; f&ne; 0, arbitrarily set &delta; &theta;
+</p>
+<p>
+Case2: no Freq error, &Delta; f = 0, &Delta;&theta; arbitrary.
+</p>
+<p>
+Assume r(t)=S<sub>DSB-SC</sub> <code>No noise in channel</code>
+</p>
+
+<p>
+$y(t) = m(t) cos(2&pi; f<sub>ct</sub>) cos(2&pi; f<sub>c&Delta;</sub> f)t + &Delta;&theta;)$
+$= \frac{1}{2}m(t)[cos(2&pi; &Delta; ft+&Delta; &Theta;)+cos(2&pi; (2f<sub>c</sub>+&Delta; f)t+&Delta; &theta;)]$
+$=\frac{1}{2}m(t)cos(2&Pi;&Delta; ft+&Delta; &Theta;) + \frac{1}{2} cos(2&pi; (2f<sub>c</sub> + &Delta; f)t + &Delta; &theta;)$
+</p>
+<p>
+$z(t) = \frac{1}{2} m(t) cos(2&pi; &Delta; ft+ &Delta;&theta; )$
+case 1: $z(t) = \frac{1}{2} m(t) cos(2&pi; &Delta; ft)$<br/>
+Unacceptable, even if &Delta; f is very small
+</p>
+<p>
+case 2: $z(t) = \frac{1}{2} m(t) cos(&Delta; &theta;)$
+Acceptable if &Delta;&theta; is small (much smaller then 90&deg;)
+</p>
+
+</div>
+
+<div id="outline-container-13.1.1" class="outline-4">
+<h4 id="sec-13.1.1"><span class="section-number-4">13.1.1</span> Delta &Theta; does not affect the noise level. </h4>
+<div class="outline-text-4" id="text-13.1.1">
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-13.2" class="outline-3">
+<h3 id="sec-13.2"><span class="section-number-3">13.2</span> Noise - AWGN </h3>
+<div class="outline-text-3" id="text-13.2">
+
+<p>Additive: noise adds to the signal $r(t) = s(t) + n(t)$ r-recieve, s-transmit, n-noise<br/>
+White: Power Sectral Density is constant $S<sub>n</sub>(f) = \frac{&eta;}{2} Watts/Hz$ S-Power spectral density of noise. eta/2 becuase half power is in negative freaks.
+Gaussian: probability density function of noies amplitude(voltage)
+Noise: naturally occuring random source 
+VAriance of noise is the power of that signal.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-13.3" class="outline-3">
+<h3 id="sec-13.3"><span class="section-number-3">13.3</span> AM (Double Sideband-Large Carrier) dsb-lc </h3>
+<div class="outline-text-3" id="text-13.3">
+
+<p>$S<sub>AM</sub>(t) = [A+ m(t)]cos(&omega;<sub>c</sub> t), &omega;<sub>c</sub> = 2&pi; f<sub>c</sub>$
+$S<sub>AM</sub>(f) = \frac{1}{2}[&delta;(f-f<sub>c</sub>)+&delta;(f+f<sub>c</sub>)]+\frac{1}{2}[M(f-f<sub>c</sub>)+M(f+fc)]$
+</p>
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-14" class="outline-2">
+<h2 id="sec-14"><span class="section-number-2">14</span> Lecture ? - EXAM ch1,2,3 4.1-4.3; AM </h2>
+<div class="outline-text-2" id="text-14">
+
+
+<p>
+DATE: <span class="timestamp-wrapper"> <span class="timestamp">2018-02-23 Fri</span></span>
+</p>
+<p>
+$S<sub>am</sub>(t) = [A + m(t)]cos(2&pi; f<sub>ct</sub>)$
+$S<sub>am</sub>(f) = \frac{A}{2}[&delta;(f-f<sub>c</sub>) + &delta;(f+f<sub>c</sub>)] + \frac{1}{2} [M(f-f<sub>c</sub>) + M(f+f<sub>c</sub>)]$
+A/2 part is carrier, and 1\2 part is sidebands.
+</p>
+<p>
+<b>define</b> peak value of m(t), m<sub>p</sub> = max|m(t)|
+let A &gt;= m<sub>p</sub>
+</p>
+
+<p>
+<b>define</b> modulation index $&mu; = \frac{m<sub>p</sub>}{A}$ <br/>
+If &mu; \leq 1 the envelope detector can be used.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-15" class="outline-2">
+<h2 id="sec-15"><span class="section-number-2">15</span> Lecture ? - Efficency </h2>
+<div class="outline-text-2" id="text-15">
+
+</div>
+</div>
+<div id="postamble">
+<p class="author"> Author: tllane42
+<a href="mailto:tllane42@shell.csc.tntech.edu">&lt;tllane42@shell.csc.tntech.edu&gt;</a>
+</p>
+<p class="date"> Date: 2018-02-25 17:02:53 CST</p>
+<p class="creator">HTML generated by org-mode 6.33x in emacs 23</p>
+</div>
+</div>
+</body>
+</html>

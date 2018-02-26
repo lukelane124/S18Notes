@@ -91,7 +91,31 @@ r_2(t) = S_2(t) - S_{21} \phi_1(t) <-- orthogonal to \phi_1(t)
 
 	r_i(t) = S_i(t) - \sum{S_{in}} \phi_n(t)
 
+** Fourier Transfrom
 
++  *F* {g(t)} = G(f) = $\int_{-\inf}^{\inf} g(t) e^{-j2\pi ft}$
+
++  *F* $^{-1}$ {G(f)} = g(t) = $\int_{-\inf}^{\inf} G(f) e^{j2\pi ft}$
+
+
+*** TODO Properties: verify that [[EQ1]] is correct
++ Linearity
+  + *F* ${a_1 x_1(t) + a_2 x_2(t)}$ = a_1 *F* ${x_1(t)}$ + a_2 *F* ${x_2(t)}$
++ Time Shift
+  + *F* ${x(t - T_0)}$ = $\int_{-\inf}^{\inf} x(t-t_0) e^{-j2\pi ft}$
+    
+	\lambda = t-t_0
+
+    = $e^{-j2\pi f}\int_{-\inf}^{\inf}{x(\lambda +t_0)}$
+
+    = e^{-j2\pift_0} $\int_{-\inf}^{inf} x(\lambda) e^{-2\pi f\lambda} d\lambda$ <<EQ1>> (EQ1)
+
+    = e^{-2j\pift_0} X(f)
+
++ Frequency Property
+  + *F* $^{-1}{X(f-f_0)} = e^{j2\pi f_0t} \int_{-\inf}^{\inf}{x(t)}$
+
+* LEcture ?
 :DATE: <2018-02-09 Fri>
 
 ** Distortionless System

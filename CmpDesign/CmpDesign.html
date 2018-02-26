@@ -1,118 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="iso-8859-1"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
 <head>
 <title>CmpDesign</title>
-<!-- 2018-02-20 Tue 13:43 -->
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="generator" content="Org-mode" />
-<meta  name="author" content="Tommy Lane" />
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2018-02-25 17:03:52 CST"/>
+<meta name="author" content="tllane42"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
   .title  { text-align: center; }
-  .todo   { font-family: monospace; color: red; }
+  .todo   { color: red; }
   .done   { color: green; }
-  .tag    { background-color: #eee; font-family: monospace;
-            padding: 2px; font-size: 80%; font-weight: normal; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
   .timestamp { color: #bebebe; }
   .timestamp-kwd { color: #5f9ea0; }
-  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .center { margin-left: auto; margin-right: auto; text-align: center; }
-  .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
+  p.verse { margin-left: 3% }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
   }
-  pre.src {
-    position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
-  }
-  pre.src:before {
-    display: none;
-    position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
-    padding: 3px;
-    border: 1px solid black;
-  }
-  pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-perl:before  { content: 'Perl'; }
-  pre.src-java:before  { content: 'Java'; }
-  pre.src-sql:before   { content: 'SQL'; }
-
-  table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
-  th.right  { text-align: center;  }
-  th.left   { text-align: center;   }
-  th.center { text-align: center; }
-  td.right  { text-align: right;  }
-  td.left   { text-align: left;   }
-  td.center { text-align: center; }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
   dt { font-weight: bold; }
-  .footpara:nth-child(2) { display: inline; }
-  .footpara { display: block; }
-  .footdef  { margin-bottom: 1em; }
-  .figure { padding: 1em; }
-  .figure p { text-align: center; }
-  .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
-    background: #ffffcc;
-  }
-  #org-div-home-and-up
-   { text-align: right; font-size: 70%; white-space: nowrap; }
-  textarea { overflow-x: auto; }
-  .linenr { font-size: smaller }
-  .code-highlighted { background-color: #ffff00; }
-  .org-info-js_info-navigation { border-style: none; }
-  #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
-  .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
   /*]]>*/-->
 </style>
 <script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2013 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
 <!--/*--><![CDATA[/*><!--*/
  function CodeHighlightOn(elem, id)
  {
@@ -134,410 +66,370 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
-<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
-<script type="text/javascript">
-<!--/*--><![CDATA[/*><!--*/
-    MathJax.Hub.Config({
-        // Only one of the two following lines, depending on user settings
-        // First allows browser-native MathML display, second forces HTML/CSS
-        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
-            jax: ["input/TeX", "output/HTML-CSS"],
-        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
-                     "TeX/noUndefined.js"],
-        tex2jax: {
-            inlineMath: [ ["\\(","\\)"] ],
-            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
-            skipTags: ["script","noscript","style","textarea","pre","code"],
-            ignoreClass: "tex2jax_ignore",
-            processEscapes: false,
-            processEnvironments: true,
-            preview: "TeX"
-        },
-        showProcessingMessages: true,
-        displayAlign: "center",
-        displayIndent: "2em",
-
-        "HTML-CSS": {
-             scale: 100,
-             availableFonts: ["STIX","TeX"],
-             preferredFont: "TeX",
-             webFont: "TeX",
-             imageFont: "TeX",
-             showMathMenu: true,
-        },
-        MMLorHTML: {
-             prefer: {
-                 MSIE:    "MML",
-                 Firefox: "MML",
-                 Opera:   "HTML",
-                 other:   "HTML"
-             }
-        }
-    });
-/*]]>*///-->
-</script>
 </head>
 <body>
 <div id="content">
+
 <h1 class="title">CmpDesign</h1>
+
+
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1. <span class="todo TODO">TODO</span> Get lecture number for this..</a>
+<li><a href="#sec-1">1 Get lecture number for this.. </a>
 <ul>
-<li><a href="#sec-1-1">1.1. Latch</a>
+<li><a href="#sec-1.1">1.1 Latch </a>
 <ul>
-<li><a href="#sec-1-1-1">1.1.1. Dlatch</a></li>
+<li><a href="#sec-1.1.1">1.1.1 Dlatch </a></li>
 </ul>
 </li>
-<li><a href="#sec-1-2">1.2. Flip flop</a>
+<li><a href="#sec-1.2">1.2 Flip flop </a>
 <ul>
-<li><a href="#sec-1-2-1">1.2.1. DFF D-Flip flop</a></li>
-<li><a href="#sec-1-2-2">1.2.2. VHDL code for DFF.</a></li>
+<li><a href="#sec-1.2.1">1.2.1 DFF D-Flip flop </a></li>
+<li><a href="#sec-1.2.2">1.2.2 VHDL code for DFF. </a></li>
 </ul>
 </li>
-<li><a href="#sec-1-3">1.3. DFF with muliplexer</a>
+<li><a href="#sec-1.3">1.3 DFF with muliplexer </a>
 <ul>
-<li><a href="#sec-1-3-1">1.3.1. <span class="todo TODO">TODO</span> grab simulation data from elearn for notes.</a></li>
+<li><a href="#sec-1.3.1">1.3.1 grab simulation data from elearn for notes. </a></li>
 </ul>
 </li>
-<li><a href="#sec-1-4">1.4. Writing a test bench</a></li>
-<li><a href="#sec-1-5">1.5. Use componenets and generates.</a></li>
+<li><a href="#sec-1.4">1.4 Writing a test bench </a></li>
+<li><a href="#sec-1.5">1.5 Use componenets and generates. </a></li>
 </ul>
 </li>
-<li><a href="#sec-2">2. Chapter 8 Wakerly</a>
+<li><a href="#sec-2">2 Chapter 8 Wakerly </a>
 <ul>
-<li><a href="#sec-2-1">2.1. Serial Adder</a></li>
-<li><a href="#sec-2-2">2.2. Synchronous System</a>
+<li><a href="#sec-2.1">2.1 Serial Adder </a></li>
+<li><a href="#sec-2.2">2.2 Synchronous System </a>
 <ul>
-<li><a href="#sec-2-2-1">2.2.1. Tasks</a></li>
-<li><a href="#sec-2-2-2">2.2.2. So, how fast can I run my adder???</a></li>
-<li><a href="#sec-2-2-3">2.2.3. clock skew</a></li>
+<li><a href="#sec-2.2.1">2.2.1 Tasks </a></li>
+<li><a href="#sec-2.2.2">2.2.2 So, how fast can I run my adder??? </a></li>
+<li><a href="#sec-2.2.3">2.2.3 clock skew </a></li>
+</ul></li>
 </ul>
 </li>
+<li><a href="#sec-3">3 Lecture ? Synchronizer </a>
+<ul>
+<li><a href="#sec-3.1">3.1 Timing using Time Quest </a></li>
 </ul>
 </li>
-<li><a href="#sec-3">3. Lecture ? Synchronizer</a>
+<li><a href="#sec-4">4 LEcture ? - Project IP catalog tutorial </a>
 <ul>
-<li><a href="#sec-3-1">3.1. Timing using Time Quest</a></li>
-</ul>
-</li>
-<li><a href="#sec-4">4. LEcture ? - Project IP catalog tutorial</a>
-<ul>
-<li><a href="#sec-4-1">4.1. 1-port ram</a></li>
+<li><a href="#sec-4.1">4.1 1-port ram </a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> <span class="todo TODO">TODO</span> Get lecture number for this..</h2>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> <span class="todo TODO"> TODO</span> Get lecture number for this.. </h2>
 <div class="outline-text-2" id="text-1">
-</div><div id="outline-container-sec-1-1" class="outline-3">
-<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Latch</h3>
-<div class="outline-text-3" id="text-1-1">
-<ul class="org-ul">
-<li>Level sensetive
+
+
+</div>
+
+<div id="outline-container-1.1" class="outline-3">
+<h3 id="sec-1.1"><span class="section-number-3">1.1</span> Latch </h3>
+<div class="outline-text-3" id="text-1.1">
+
+<ul>
+<li>
+Level sensetive
 </li>
 </ul>
+
 </div>
-<div id="outline-container-sec-1-1-1" class="outline-4">
-<h4 id="sec-1-1-1"><span class="section-number-4">1.1.1</span> Dlatch</h4>
-<div class="outline-text-4" id="text-1-1-1">
+
+<div id="outline-container-1.1.1" class="outline-4">
+<h4 id="sec-1.1.1"><span class="section-number-4">1.1.1</span> Dlatch </h4>
+<div class="outline-text-4" id="text-1.1.1">
+
+
 
 <div class="figure">
-<p><img src="./img/DFFandDLATCHsignals.png" alt="DFFandDLATCHsignals.png" width="300px" />
-</p>
-<p><span class="figure-number">Figure 1:</span> Signals of a Dlatch.</p>
+<p><img src="./img/DFFandDLATCHsignals.png" :width 300px alt="./img/DFFandDLATCHsignals.png" /></p>
+<p>Signals of a Dlatch.</p>
 </div>
 </div>
 </div>
+
 </div>
-<div id="outline-container-sec-1-2" class="outline-3">
-<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Flip flop</h3>
-<div class="outline-text-3" id="text-1-2">
-</div><div id="outline-container-sec-1-2-1" class="outline-4">
-<h4 id="sec-1-2-1"><span class="section-number-4">1.2.1</span> DFF D-Flip flop</h4>
-<div class="outline-text-4" id="text-1-2-1">
-<ul class="org-ul">
-<li>Edge triggered
+
+<div id="outline-container-1.2" class="outline-3">
+<h3 id="sec-1.2"><span class="section-number-3">1.2</span> Flip flop </h3>
+<div class="outline-text-3" id="text-1.2">
+
+
+
+</div>
+
+<div id="outline-container-1.2.1" class="outline-4">
+<h4 id="sec-1.2.1"><span class="section-number-4">1.2.1</span> DFF D-Flip flop </h4>
+<div class="outline-text-4" id="text-1.2.1">
+
+
+<ul>
+<li>
+Edge triggered
 </li>
 </ul>
 
-<div class="figure">
-<p><img src="./img/DFFandDLATCHsignals.png" alt="DFFandDLATCHsignals.png" width="300px" />
+<p><div class="figure">
+<p><img src="./img/DFFandDLATCHsignals.png" :width 300px alt="./img/DFFandDLATCHsignals.png" /></p>
+<p>Signals of a DFF.</p>
+</div>
 </p>
-<p><span class="figure-number">Figure 2:</span> Signals of a DFF.</p>
-</div>
-</div>
 </div>
 
-<div id="outline-container-sec-1-2-2" class="outline-4">
-<h4 id="sec-1-2-2"><span class="section-number-4">1.2.2</span> VHDL code for DFF.</h4>
-<div class="outline-text-4" id="text-1-2-2">
-<ul class="org-ul">
-<li>If all inputs are not in the sensitivity list, then the circuit is not combinational.
+</div>
+
+<div id="outline-container-1.2.2" class="outline-4">
+<h4 id="sec-1.2.2"><span class="section-number-4">1.2.2</span> VHDL code for DFF. </h4>
+<div class="outline-text-4" id="text-1.2.2">
+
+<ul>
+<li>
+If all inputs are not in the sensitivity list, then the circuit is not combinational.
+
 </li>
 </ul>
 </div>
 </div>
+
 </div>
 
-<div id="outline-container-sec-1-3" class="outline-3">
-<h3 id="sec-1-3"><span class="section-number-3">1.3</span> DFF with muliplexer</h3>
-<div class="outline-text-3" id="text-1-3">
-</div><div id="outline-container-sec-1-3-1" class="outline-4">
-<h4 id="sec-1-3-1"><span class="section-number-4">1.3.1</span> <span class="todo TODO">TODO</span> grab simulation data from elearn for notes.</h4>
+<div id="outline-container-1.3" class="outline-3">
+<h3 id="sec-1.3"><span class="section-number-3">1.3</span> DFF with muliplexer </h3>
+<div class="outline-text-3" id="text-1.3">
+
+
+</div>
+
+<div id="outline-container-1.3.1" class="outline-4">
+<h4 id="sec-1.3.1"><span class="section-number-4">1.3.1</span> <span class="todo TODO"> TODO</span> grab simulation data from elearn for notes. </h4>
+<div class="outline-text-4" id="text-1.3.1">
+
+
 </div>
 </div>
 
-<div id="outline-container-sec-1-4" class="outline-3">
-<h3 id="sec-1-4"><span class="section-number-3">1.4</span> Writing a test bench</h3>
-<div class="outline-text-3" id="text-1-4">
-<ul class="org-ul">
-<li>How is it done?<br  />
+</div>
+
+<div id="outline-container-1.4" class="outline-3">
+<h3 id="sec-1.4"><span class="section-number-3">1.4</span> Writing a test bench </h3>
+<div class="outline-text-3" id="text-1.4">
+
+<ul>
+<li>
+How is it done?<br/>
 </li>
 </ul>
-<p>
-You must test the functionality of the circuit.
+
+<p>You must test the functionality of the circuit.
 </p>
+
+</div>
+
+</div>
+
+<div id="outline-container-1.5" class="outline-3">
+<h3 id="sec-1.5"><span class="section-number-3">1.5</span> Use componenets and generates. </h3>
+<div class="outline-text-3" id="text-1.5">
+
+
+
 </div>
 </div>
 
-
-<div id="outline-container-sec-1-5" class="outline-3">
-<h3 id="sec-1-5"><span class="section-number-3">1.5</span> Use componenets and generates.</h3>
-</div>
 </div>
 
-
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> Chapter 8 Wakerly</h2>
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Chapter 8 Wakerly </h2>
 <div class="outline-text-2" id="text-2">
-</div><div id="outline-container-sec-2-1" class="outline-3">
-<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Serial Adder</h3>
-<div class="outline-text-3" id="text-2-1">
+
+
+</div>
+
+<div id="outline-container-2.1" class="outline-3">
+<h3 id="sec-2.1"><span class="section-number-3">2.1</span> Serial Adder </h3>
+<div class="outline-text-3" id="text-2.1">
+
+
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption class="t-above"><span class="table-number">Table 1:</span> Serial Binary adder.</caption>
-
-<colgroup>
-<col  class="left" />
-
-<col  class="right" />
-
-<col  class="right" />
-
-<col  class="right" />
-
-<col  class="right" />
+<caption>Serial Binary adder.</caption>
+<colgroup><col align="left" /><col align="right" /><col align="left" /><col align="left" /><col align="left" />
 </colgroup>
 <tbody>
-<tr>
-<td class="left">&#xa0;</td>
-<td class="right">t<sub>3</sub></td>
-<td class="right">t<sub>2</sub></td>
-<td class="right">t<sub>1</sub></td>
-<td class="right">t<sub>0</sub></td>
-</tr>
-
-<tr>
-<td class="left">A</td>
-<td class="right">0</td>
-<td class="right">1</td>
-<td class="right">1</td>
-<td class="right">0</td>
-</tr>
-
-<tr>
-<td class="left">B</td>
-<td class="right">0</td>
-<td class="right">1</td>
-<td class="right">1</td>
-<td class="right">1</td>
-</tr>
-
-<tr>
-<td class="left">C<sub>in0</sub></td>
-<td class="right">?</td>
-<td class="right">?</td>
-<td class="right">?</td>
-<td class="right">0</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="right">&#xa0;</td>
-<td class="right">&#xa0;</td>
-<td class="right">&#xa0;</td>
-<td class="right">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="left">S</td>
-<td class="right">1</td>
-<td class="right">1</td>
-<td class="right">0</td>
-<td class="right">1</td>
-</tr>
-
-<tr>
-<td class="left">C<sub>out</sub></td>
-<td class="right">0</td>
-<td class="right">1</td>
-<td class="right">1</td>
-<td class="right">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="left">&#xa0;</td>
-<td class="right">&#xa0;</td>
-<td class="right">&#xa0;</td>
-<td class="right">&#xa0;</td>
-<td class="right">&#xa0;</td>
-</tr>
+<tr><td></td><td>t<sub>3</sub></td><td>t<sub>2</sub></td><td>t<sub>1</sub></td><td>t<sub>0</sub></td></tr>
+<tr><td>A</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>B</td><td>0</td><td>1</td><td>1</td><td>1</td></tr>
+<tr><td>C<sub>in0</sub></td><td>?</td><td>?</td><td>?</td><td>0</td></tr>
+<tr><td>S</td><td>1</td><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>C<sub>out</sub></td><td>0</td><td>1</td><td>1</td><td></td></tr>
 </tbody>
 </table>
-</div>
-</div>
 
 
-<div id="outline-container-sec-2-2" class="outline-3">
-<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Synchronous System</h3>
-<div class="outline-text-3" id="text-2-2">
-<ul class="org-ul">
-<li>FF are clocked by the same common clock signal
+
+</div>
+
+</div>
+
+<div id="outline-container-2.2" class="outline-3">
+<h3 id="sec-2.2"><span class="section-number-3">2.2</span> Synchronous System </h3>
+<div class="outline-text-3" id="text-2.2">
+
+<ul>
+<li>
+FF are clocked by the same common clock signal
 </li>
-<li>Races and hazards are not a problem in synchronous systems -&gt;WHY?
-<ul class="org-ul">
-<li>Races: More than 1 signal switching concurrently
+<li>
+Races and hazards are not a problem in synchronous systems -&gt;WHY?
+<ul>
+<li>
+Races: More than 1 signal switching concurrently
 </li>
-<li>Hazards: Unwanted switching transients that may appear at the output of a circuit because differnt path exhibits different propagationn delays.
+<li>
+Hazards: Unwanted switching transients that may appear at the output of a circuit because differnt path exhibits different propagationn delays.
 </li>
 </ul>
 </li>
-<li><b>Not</b> a problem because the clock takes care of the slower of the race condition.
+<li>
+<b>Not</b> a problem because the clock takes care of the slower of the race condition.
+
 </li>
 </ul>
+
 </div>
 
-<div id="outline-container-sec-2-2-1" class="outline-4">
-<h4 id="sec-2-2-1"><span class="section-number-4">2.2.1</span> Tasks</h4>
-<div class="outline-text-4" id="text-2-2-1">
-<ul class="org-ul">
-<li>Minimize and determinte the amount of clock skew in the system
+<div id="outline-container-2.2.1" class="outline-4">
+<h4 id="sec-2.2.1"><span class="section-number-4">2.2.1</span> Tasks </h4>
+<div class="outline-text-4" id="text-2.2.1">
+
+<ul>
+<li>
+Minimize and determinte the amount of clock skew in the system
 </li>
-<li>Ensure that FF have positive setup and hold time margins <code>Shown in next slide</code>
+<li>
+Ensure that FF have positive setup and hold time margins <code>Shown in next slide</code>
 </li>
-<li>Identify asynchro&#x2026;&#x2026;
+<li>
+Identify asynchro&hellip;&hellip;
+
+
+
 </li>
 </ul>
 
-<p>
-t<sub>ffpd</sub> = ff prop delay<br  />
-t<sub>comb</sub> = combinational logic delay<br  />
-t<sub>setup</sub> = time duration prior to the clock edge at which the incoming data to the flip flop should be stable.<br  />
-t<sub>hold</sub> Time duration after the clock edge for data to remain stable.<br  />
+<p>t<sub>ffpd</sub> = ff prop delay<br/>
+t<sub>comb</sub> = combinational logic delay<br/>
+t<sub>setup</sub> = time duration prior to the clock edge at which the incoming data to the flip flop should be stable.<br/>
+t<sub>hold</sub> Time duration after the clock edge for data to remain stable.<br/>
 </p>
 </div>
+
 </div>
 
-<div id="outline-container-sec-2-2-2" class="outline-4">
-<h4 id="sec-2-2-2"><span class="section-number-4">2.2.2</span> So, how fast can I run my adder???</h4>
-<div class="outline-text-4" id="text-2-2-2">
-<p>
-I want my clock period &gt; (t<sub>ffpd</sub> + t<sub>comb</sub> + t<sub>setup</sub>)<br  />
+<div id="outline-container-2.2.2" class="outline-4">
+<h4 id="sec-2.2.2"><span class="section-number-4">2.2.2</span> So, how fast can I run my adder??? </h4>
+<div class="outline-text-4" id="text-2.2.2">
+
+<p>I want my clock period &gt; (t<sub>ffpd</sub> + t<sub>comb</sub> + t<sub>setup</sub>)<br/>
 Also, want to make sure that T<sub>hold</sub> &gt; t<sub>ffpd</sub> + t<sub>comb</sub>
-</p>
-</div>
-</div>
-<div id="outline-container-sec-2-2-3" class="outline-4">
-<h4 id="sec-2-2-3"><span class="section-number-4">2.2.3</span> clock skew</h4>
-<div class="outline-text-4" id="text-2-2-3">
-<p>
-clock<sub>skew</sub> = Difference in arrival times of the clock signal to different devices.
-</p>
+</p></div>
+
 </div>
 
-<ol class="org-ol"><li><a id="sec-2-2-3-1" name="sec-2-2-3-1"></a>Solution for clock skew<br  /><div class="outline-text-5" id="text-2-2-3-1">
-<p>
+<div id="outline-container-2.2.3" class="outline-4">
+<h4 id="sec-2.2.3"><span class="section-number-4">2.2.3</span> clock skew </h4>
+<div class="outline-text-4" id="text-2.2.3">
+
+<p>clock<sub>skew</sub> = Difference in arrival times of the clock signal to different devices.
+</p>
+<ul>
+<li id="sec-2.2.3.1">Solution for clock skew <br/>
 H-tree clock layout.
-</p>
-</div>
-</li></ol>
+
+
+
+</li>
+</ul>
 </div>
 </div>
 </div>
 
+</div>
 
-
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> Lecture ? Synchronizer</h2>
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Lecture ? Synchronizer </h2>
 <div class="outline-text-2" id="text-3">
-<p>
-DATE: <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-02-13 Tue&gt;</span></span>
-</p>
 
-<p>
-$T &gt; t<sub>su</sub> + t<sub>ffpd</sub>$<br  />
-  $t<sub>r</sub> = T - T<sub>su</sub>$<br  />
-  $t<sub>r</sub> = meta stability Resolution time$<br  />
+<p>DATE: <span class="timestamp-wrapper"> <span class="timestamp">2018-02-13 Tue</span></span>
 </p>
-
+<p>
+$T &gt; t<sub>su</sub> + t<sub>ffpd</sub>$ <br/>
+$t<sub>r</sub> = T - T<sub>su</sub>$ <br/>
+t<sub>r</sub> = meta stability Resolution time <br/>
+</p>
 <p>
 <code>Meant time between failure (mtbf)</code> = Time between the two failures of teh syncrhonizer, What is the propability of a given synchronizer to fail.
 </p>
-
 <p>
-\(MTBF = fn(t_r, f, a, FF)\), f=clock freq, a = freq of aSync input FF = flip flop chars.
-\(MTBF = \frac{e^{\frac{t_r}{\tau}}}{T_0fa}\)
+$MTBF = fn(t<sub>r</sub>, f, a, FF)$, f=clock freq, a = freq of aSync input FF = flip flop chars.
+$MTBF = \frac{e<sup>\frac{t<sub>r</sub>}{&tau;}</sup>}{T<sub>0fa</sub>}$
 </p>
-
 <p>
 Synchronizing goes hand in hand with handshaking.
 SMIMIT??? TRIGGEr
 hysterises?
 </p>
+
+
 </div>
 
+<div id="outline-container-3.1" class="outline-3">
+<h3 id="sec-3.1"><span class="section-number-3">3.1</span> Timing using Time Quest </h3>
+<div class="outline-text-3" id="text-3.1">
 
-<div id="outline-container-sec-3-1" class="outline-3">
-<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Timing using Time Quest</h3>
-<div class="outline-text-3" id="text-3-1">
-<p>
-Data arrival time is the time after launch FF to entering the Latch<br  />
-   Slack time, bus still coming time,
-\(Data arrival time = Launch clock Delay + Data Delay\)
+<p>Data arrival time is the time after launch FF to entering the Latch<br/>
+Slack time, bus still coming time,
+$Data arrival time = Launch clock Delay + Data Delay$
 $clock uncertainty, and clock pessimism = clock error, can be ~5% error on either side of the clock edge.$
-\(Required time Setup = relationship + Latch edge + clock pessimism + uTsu - Clock uncertainty\)
+$Required time Setup = relationship + Latch edge + clock pessimism + uTsu - Clock uncertainty$
 </p>
-</div>
+
 </div>
 </div>
 
+</div>
 
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> LEcture ? - Project IP catalog tutorial</h2>
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> LEcture ? - Project IP catalog tutorial </h2>
 <div class="outline-text-2" id="text-4">
-<p>
-DATE: <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-02-20 Tue&gt;</span></span>
+
+<p>DATE: <span class="timestamp-wrapper"> <span class="timestamp">2018-02-20 Tue</span></span>
 </p>
+
 </div>
 
-<div id="outline-container-sec-4-1" class="outline-3">
-<h3 id="sec-4-1"><span class="section-number-3">4.1</span> 1-port ram</h3>
-<div class="outline-text-3" id="text-4-1">
-<p>
-Can only read or write at a time, not both.</p>
+<div id="outline-container-4.1" class="outline-3">
+<h3 id="sec-4.1"><span class="section-number-3">4.1</span> 1-port ram </h3>
+<div class="outline-text-3" id="text-4.1">
+
+<p>Can only read or write at a time, not both.
+</p></div>
 </div>
 </div>
+<div id="postamble">
+<p class="author"> Author: tllane42
+<a href="mailto:tllane42@shell.csc.tntech.edu">&lt;tllane42@shell.csc.tntech.edu&gt;</a>
+</p>
+<p class="date"> Date: 2018-02-25 17:03:52 CST</p>
+<p class="creator">HTML generated by org-mode 6.33x in emacs 23</p>
 </div>
-</div>
-<div id="postamble" class="status">
-<p class="author">Author: Tommy Lane</p>
-<p class="date">Created: 2018-02-20 Tue 13:43</p>
-<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
