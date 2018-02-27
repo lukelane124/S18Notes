@@ -4,7 +4,7 @@
 *** Dlatch
 
 #+Caption: Signals of a Dlatch.
-#+attr_html: :width 300px
+#+attr_html: :width 300
 [[./img/DFFandDLATCHsignals.png]]
 ** Flip flop
 
