@@ -1,0 +1,48 @@
+#+Title:Fundamentals of Computer Design Test 1
+
+* Hw1 material
+** Hennessey 1.6 
+*** CPI calculations 
+
+** Hennessey 1.7
+
+** Hennessey 1.9
+*** 2
+
+** Hennessey 1.9
+*** 3
+
+** Hennessey 1.11
+*** 7
+
+*** 8 
+
+*** 9
+
+*** 10
+
+*** 11
+
+** Hennessey 1.12
+*** 3
+
+** Hennessey 1.14
+*** 1
+
+* Hw2 material
+** Hennessey 2
+*** 14
+
+*** 15
+
+*** 19
+**** parts...
+
+*** 23
+
+* Hw3 material 
+** Qa - Syncronous Combinational logic
+
+** Qb
+
+* Hw4 material
