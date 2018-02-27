@@ -760,3 +760,91 @@ DATE:<2018-02-20 Tue>
 - Gives us three laws of planetary motion
 - Gives us elipses
 - 
+
+* Lecture 10 - Galileo's Struggle and Triumphs; Magic is test corrections
+#+DATE: <2018-02-27 Tue>
+** Galileo and Music
+TY:8HL2qvO4jXk
+
+** Framing questions
+able to transcend ?? controls
+How did the nature of Galileo's character affect thou outcome if this life.
+
+** Galileo (1562-1642)
+   Cosmos made him out to be a hero, has to work with church in some instances
+- Uni prof who hates his job. He teaches math, upper division is theology
+- Wants to do his own work
+
+*** Profs in this time weren't allowed to marry.
+    This didn't stop him trying to find love..
+    He had a family, 2-3 illigitimate children
+** Virginia Galilei/Maria Celeste
+   2 daughters 1 son.
+   - Son had no issues with illigitimate background, however daughters can't marry becuase of their illigitimate status.
+** Galileo has a problem with authority...
+** Case Study: Galileo
+   - Humble begginnings
+   - World of the telescope
+   - The Starry Messenger (1610)
+     - Sees potential in telescope, he uses is own abilities and grinds his own lenses, to produce 30X 3 times the standard at that time.
+   - Prior to this Astronomy is really boring, pretty much just a lot of math, and observing positions of spacely bodies.
+** Starry messenger
+   Drew illustrations and were published in SIDEREVS 
+
+** Galileo and his world
+   - Medician starts (or Moons of Jupiter)
+   - Move Sicen from teh Universitry to the court
+     - 
+** Court life
+   - Medici Court
+     - Dinner time debates?
+     - Letter to GRand Duchess Christina
+     - Discusses origins of science and religion, and Bible.
+** Grand duchess Chirstina GD of Tuscany (1565-1637)
+   Related to Medici's through blood, distance cousin
+
+** Galileo and Heliocentric Theory
+   - Galileo defends Compernican system?
+   - Catholic Chruch reacts
+     - "De Rev"
+     - Galileo reacts
+     - Catholic Church Reacts to Galilero
+
+** New Pope -> Urban VIII
+   new ?? to teach people about copernican and ptolmaic understandings??
+
+** Galileo's other book "Dialogue of the Two Chief World Systems" (1632)
+- Four Characters
+  - [NArrator]*
+  - Salviatti
+  - Sagredo
+  - Simplicio - represents the ptolmaic system
+
+** outside of the galileo case study
+   - Women contributing to astronomy & other sciences around teh same time:
+     - Jeanne Dumme
+       - Popularizer of Galileo's ideas, and advocated that Women can think for themselves
+     - Ann Baynard
+     - Aphra Behn
+       Both are cited in works Supposed to podcast about Aphra, physicians
+
+   - Did Science flourish outside teh catholic church?
+
+** Other revolutions of Sorts
+*** William Harvery (1578-1657)
+    - Physician
+    - /On teh motion of the heard and blood/ (1682)
+     Used a tournicate to illustrate how blood circulated through body.
+#+Caption: Timeline
+
+#+BEGIN_SRC ditaa :file ./img/timeline227.png
+
+	     Aristotle        Copernicus        Newton
+	<----+--------+-------+---------+-------+------+--> Scientific Revolution
+	              Ptolemy           Galileo        
+
+#+end_src
+
+#+RESULTS:
+#+CAPTION: Timeline for scientific discovery
+[[file:./img/timeline227.png]]
