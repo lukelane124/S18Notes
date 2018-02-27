@@ -349,3 +349,14 @@ let A >= m_p
 If \mu \leq 1 the envelope detector can be used.
 
 * Lecture ? - Efficency
+
+$S_{AM} = [A + m(t)] cos(\omega_c t)$ \\
+$= A cos(\omega_c t) + m(t) cos(\omega_c t)$
+
+*Modulation Index* $\mu = \frac{m_p}{A}$
+
+** Power of Signal
+$P_{S_{AM}} = <S_{AM}(t),S_{AM}(t)>$ \\
+$<Acos(\omgea_c t), Acos(\omega_c t)> + <Acos(\omega_c t), m(t)cos(\omega_c t)> + <m(t)cos\omega_c t),Acos(\omega_c)> + <m(t)cos(\omega_c t), m(t)cos(\omega_c t)>$ \\
+$<Acos(\omgea_c t), Acos(\omega_c t)> + <m(t)cos(\omega_c t), m(t)cos(\omega_c t)>$ \\
+
