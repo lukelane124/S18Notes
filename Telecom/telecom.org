@@ -360,3 +360,21 @@ $P_{S_{AM}} = <S_{AM}(t),S_{AM}(t)>$ \\
 $<Acos(\omgea_c t), Acos(\omega_c t)> + <Acos(\omega_c t), m(t)cos(\omega_c t)> + <m(t)cos\omega_c t),Acos(\omega_c)> + <m(t)cos(\omega_c t), m(t)cos(\omega_c t)>$ \\
 $<Acos(\omgea_c t), Acos(\omega_c t)> + <m(t)cos(\omega_c t), m(t)cos(\omega_c t)>$ \\
 
+
+* Lecture ? - Hilbert Filter
+<2018-03-16 Fri>
+$X_h(t) = X(h) * h(t)$
+$h(t) = \frac{1}{\pi t}$
+
+x(t) -> h(t) -> x_h(t)
+
+$H(f) = -j sgn(f)$
+
+#+Caption: graphs
+
+** Analytic Signal
+   $let M_{+}(f) = M(f) \frac{1}{2}[1 + sgn(f)]$
+
+take inverse fourier transform 
+$m_{+}(t) = \frac{1}{2}[m(t) + jm_h(t)]$
+where $m_h(t) = m(t) * h(t)$
