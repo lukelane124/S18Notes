@@ -378,3 +378,13 @@ $H(f) = -j sgn(f)$
 take inverse fourier transform 
 $m_{+}(t) = \frac{1}{2}[m(t) + jm_h(t)]$
 where $m_h(t) = m(t) * h(t)$
+
+* Lecture ? - Quadrature Amplitude Modulation (Q&M)
+  $m_1(t)
+* LEcture ? - Vistigial Sideband (VSG)
+<2018-03-21 Wed>
+
+Want bandwidth advantage of SSB, but we need the freak response (of m(t)) to be very close to zero.
+Solution: transmit one sideband, and a small fraction of the other.
+
+#+Caption: M(f)
